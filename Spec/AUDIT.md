@@ -127,3 +127,14 @@ Append a concise record for each logical change batch: reason, files/area, verif
 **Reason:** Owner encountered No detected services after selecting the multi-service preset and wanted assurance that current presentation hosting does not block future live functionality.
 
 **Verification:** JSON contract and expected dist files checked; configured npm run build passes. No service, credential, Deepgram connection, solver run or website deployment was added.
+
+
+## TRAB-013 · 2026-11-01 · Live presentation voice
+
+**Changed:** Integrated live Deepgram Voice Agent with server-only temporary-token issuance, streaming audio/transcripts, validated shared workspace tools and an explicit Browser fallback.
+
+**Reason:** Owner requested real Deepgram in the Vercel presentation while preserving the engineering baseline and deferring Supabase and Modal.
+
+**Verification:** TypeScript/build and 12 offline tests pass; a bounded generated-speech provider check applied a 2 mm fixture change and returned text/audio; an isolated browser session applied 2.5 mm and ended cleanly. Human-microphone/audio-quality review remains manual. Hosted verification follows the source push; server environment readiness is not inferred from local success.
+
+**Files:** `demo/api/`, `demo/server/`, `demo/src/deepgram.ts`, `demo/src/voice-contract.ts`, `demo/src/VoiceCopilot.tsx`, `demo/src/main.tsx`, `demo/src/themes.css`, `demo/serve.mjs`, `demo/build.mjs`, `demo/package.json`, `demo/package-lock.json`, `demo/tests/`, `demo/scripts/`, `demo/.env.example`, `demo/README.md`, `Spec/DEMO.md`, `Spec/README.md`, `README.md`, `SERVICE_SETUP.md`, `AGENTS.md`, `docs/verification/DEEPGRAM_CHECKS.md`, `docs/verification/deepgram-live-check.json`.

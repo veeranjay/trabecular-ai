@@ -128,3 +128,15 @@ html[data-theme=violet] .avatar{background:#bda2d312;border-color:#c5a0eb1d;colo
 html[data-theme=violet] .floating-nav,html[data-theme=violet] .floating-nav:hover,html[data-theme=violet] .floating-nav:focus-within{background:var(--surface-dock);border-color:var(--dock-edge)}
 html[data-theme=violet] .floating-nav:hover,html[data-theme=violet] .floating-nav:focus-within{background:var(--surface-dock-expanded)}
 html[data-theme=violet] :is(.inspector,.candidate-panel,.voice-copilot){scrollbar-color:#51405f transparent}
+.voice-provider{display:flex;align-items:center;gap:4px;margin-top:11px;font-size:8px;flex-wrap:wrap}
+.voice-provider button{display:flex;align-items:center;gap:5px;padding:5px 7px;color:#819274;border-radius:7px;font-size:8px}
+.voice-provider button[aria-pressed=true]{color:#cde2b4;background:#c8dfac0c}
+.voice-provider button:hover{background:#c8dfac09;color:#e1ecd5}
+.voice-provider button i{width:4px;height:4px;border-radius:50%;background:#b7de88}
+.voice-provider .voice-brief{margin-left:auto}
+.voice-provider .voice-end{color:#c8ac8e}
+.voice-access-code{width:100%;margin:5px 0 9px;padding:10px 12px;border:1px solid #ffffff16;border-radius:10px;background:#0002;color:inherit;font:inherit;font-size:11px}
+.voice-orb.connecting{opacity:.6}
+html[data-theme=violet] .voice-provider button{color:#9b87ad}
+html[data-theme=violet] .voice-provider button[aria-pressed=true]{color:#dfc8f8;background:#c2a2e710}
+html[data-theme=violet] .voice-provider button i{background:#c5a3eb}

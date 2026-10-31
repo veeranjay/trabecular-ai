@@ -1,6 +1,6 @@
 # Trabecular presentation workspace
 
-Self-contained React/Three.js presentation, isolated from the engineering app. No Python backend, Modal, Supabase or API keys are needed. All fonts, anatomy and contoured reference hardware ship locally. Browser voice uses the browser's speech recognition/synthesis and may require internet access to its speech service; it is not a connected Deepgram session. Microphone capture starts only when the visitor presses its button, and stops when ended or closed.
+Self-contained React/Three.js presentation, isolated from the engineering app. Direct controls and exports work without Python, Modal, Supabase or API keys. Live Deepgram voice uses server-only credentials and temporary browser tokens. All fonts, anatomy and contoured reference hardware ship locally. A separately selected Browser provider retains browser speech recognition/synthesis; it is never labeled as Deepgram. Microphone capture starts only when the visitor presses its button, and stops when ended, closed or the page is hidden.
 
 ## Open locally
 
@@ -12,9 +12,11 @@ $env:PORT='3100'
 npm run dev
 ```
 
-Open `http://127.0.0.1:3100/`. A prebuilt distribution needs only `dist/` and `serve.mjs`; run `node serve.mjs` with `PORT=3100`, or serve `dist/` using any ordinary static HTTP server. Use HTTPS for a hosted microphone session. Chrome/Edge are recommended for browser speech recognition; unavailable/denied recognition gives an actionable error and typed commands remain available.
+Open `http://127.0.0.1:3100/`. A prebuilt distribution needs `dist/`, `serve.mjs` and `server/` with Node 22.16+ or 24+; run `node serve.mjs` with `PORT=3100`, or serve `dist/` using an ordinary static HTTP server for direct controls and Browser voice only. Static-only hosting cannot issue Deepgram tokens. Use HTTPS for a hosted microphone session. Chrome/Edge are recommended for browser speech recognition; unavailable/denied recognition gives an actionable error and typed commands remain available.
 
 ## Presentation path
+
+Live voice setup: see [Deepgram integration](../docs/verification/DEEPGRAM_CHECKS.md) for configuration, verified behavior and limits.
 
 Landing → guided tour → Prepare → Design → Analyze → Compare → Explore → Studies → SDF Lab → Evidence. Replay the tour with the help button. Use Present to reduce chrome; Escape exits. The floating navigation expands on hover or keyboard focus and becomes a floating bottom dock on phones.
 
@@ -33,7 +35,7 @@ Actual features include 3D inspection, parameter-responsive display geometry, se
 
 ## Simulation boundary
 
-CT mandibles and default v5 fixation geometry originate from the engineering project. Hardware display morphs are lightweight visual illustrations and do not generate analysis-ready CAD. SDF Lab uses an analytical CSG field. Stress/deformation colors, response values, cohort rows and search ranking use a declared deterministic proxy, not FEM or clinical predictions; there is no safety-qualified winner. Method details and exported provenance retain this distinction without persistent presentation badges. The browser speech provider is separate from the deferred Deepgram integration.
+CT mandibles and default v5 fixation geometry originate from the engineering project. Hardware display morphs are lightweight visual illustrations and do not generate analysis-ready CAD. SDF Lab uses an analytical CSG field. Stress/deformation colors, response values, cohort rows and search ranking use a declared deterministic proxy, not FEM or clinical predictions; there is no safety-qualified winner. Method details and exported provenance retain this distinction without persistent presentation badges. The browser speech provider is separate from the live Deepgram integration.
 
 ## Return to the exact engineering checkpoint
 
@@ -45,7 +47,7 @@ git switch mvp-baseline
 
 Return with `git switch demo/buildathon`. Private environment settings, databases, existing artifacts and browser drafts are excluded from Git and were left in place; switching source branches does not restore or overwrite those runtime files. Both source branches and recovery tags are backed up at https://github.com/veeranjay/trabecular-ai. Private environment settings, databases and artifacts are excluded from that repository.
 
-Website publication is on hold at the owner's request; GitHub source pushes are explicitly authorized. The registered Sites identity is `appgprj_6ae620dad71081918b83d7496fb4f184`; its private manifest is retained in the isolated publishing checkout under `tmp/trabecular-site/.openai/hosting.json`. Reuse it rather than create another Site. No Sites source push or live website deployment has been completed. GitHub source backup is a separate operation.
+The owner now hosts the presentation at https://trabecular-ai-demo.vercel.app/ through GitHub-connected Vercel deployments; GitHub source pushes are explicitly authorized. The separate Sites publication remains held. The registered Sites identity is `appgprj_6ae620dad71081918b83d7496fb4f184`; its private manifest is retained in the isolated publishing checkout under `tmp/trabecular-site/.openai/hosting.json`. Reuse it rather than create another Site. No Sites deployment has been completed. GitHub source backup is a separate operation.
 
 Attribution: Visible Human / BoneHub, S. H. Alavi & M. Asseln (2026), CC BY 4.0, https://huggingface.co/datasets/BoneHub/visible-human-3d-models. Local DM Sans and Manrope font licenses are included in `public/fonts/`.
 
@@ -57,4 +59,4 @@ Choose Sage or Violet in Settings → Appearance, or with the landing-page foote
 
 Use the `demo/buildathon` branch, Root Directory `demo`, and Application/Framework Preset **Other**. `demo/vercel.json` pins `npm ci`, `npm run build` and output `dist`. The Services preset expects a different multi-service configuration and is unnecessary for this presentation. Refresh the import screen after the configuration push.
 
-Static asset hosting does not prevent live features. Future server-side endpoints can be added under the project-root `api/` directory on Vercel, for example to issue short-lived Deepgram tokens while keeping the provider key server-side. Browser voice then connects directly to Deepgram. Heavy numerical work runs on a separate compute backend; the browser requests jobs and receives results. Git-connected deployments can update the same site as the implementation evolves. These endpoints/provider connections are not implemented by the hosting configuration.
+Static assets and the two server functions under `api/` deploy together. The browser connects directly to Deepgram after receiving a temporary token; no long-running WebSocket passes through Vercel. Heavy numerical work remains a separate future compute backend. Git-connected deployments update the same site as the implementation evolves.

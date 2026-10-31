@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "dev": "node serve.mjs"
+    "dev": "node serve.mjs",
+    "test:voice": "node scripts/test-voice.mjs",
+    "check:deepgram": "node scripts/run-deepgram-check.mjs"
   },
   "dependencies": {
+    "@deepgram/agents": "0.2.0",
     "lucide-react": "1.61.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",

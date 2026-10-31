@@ -1,0 +1,13 @@
+{
+  "settings_applied": true,
+  "user_transcript_received": true,
+  "function_calls": [
+    "update_design"
+  ],
+  "parameter_applied": true,
+  "output_audio_bytes": 142080,
+  "assistant_text_received": true,
+  "elapsed_seconds": 9.889,
+  "passed": true,
+  "source": "generated speech / fixture workspace; no human microphone"
+}

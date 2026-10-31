@@ -1,6 +1,6 @@
 # Trabecular
 
-Current presentation work: the standalone [demo workspace](demo/README.md) runs at `http://127.0.0.1:3100/`, with no engineering backend or API keys. Source branch: `demo/buildathon`. The pre-demo engineering checkpoint is preserved on `mvp-baseline`, tagged `pre-demo-2026-10-31`. [Submission scope](Spec/DEMO.md). Publication is currently on hold for review.
+Current presentation work: the standalone [demo workspace](demo/README.md) runs at `http://127.0.0.1:3100/`, without the engineering backend. Live Deepgram voice uses a server-side key; direct controls and the explicit Browser voice fallback remain usable without it. Source branch: `demo/buildathon`. The pre-demo engineering checkpoint is preserved on `mvp-baseline`, tagged `pre-demo-2026-10-31`. [Submission scope](Spec/DEMO.md). The owner-hosted presentation is at https://trabecular-ai-demo.vercel.app/.
 
 A dark engineering workspace for preparing reference mandibles, editing bilateral fixation assemblies, running experimental 3D elasticity and retaining reproducible evidence.
 

@@ -70,3 +70,11 @@ Evidence: [Modal access verification](../verification/MODAL_ACCESS.md). The loca
 
 **Changed:** Declared the demo as one static asset build on Vercel, with future server functions/provider connections kept distinct from heavy compute.
 **Why:** Correct the Services preset mismatch without treating current static delivery as a permanent restriction on a functional application.
+
+
+## 2026-11-01 · TRAB-013 · Live voice boundary · Implemented / local verified
+
+**Changed:** Integrated live Deepgram Voice Agent with server-only temporary-token issuance, streaming audio/transcripts, validated shared workspace tools and an explicit Browser fallback.
+**Why:** Owner requested real Deepgram in the Vercel presentation while preserving the engineering baseline and deferring Supabase and Modal.
+
+The Vercel UI calls short-lived token functions then streams directly to Deepgram. Client session limits and per-instance throttling are not hard spending caps; optional shared access code is available. The separate Sites hold is unchanged. TypeScript/build and 12 offline tests pass; a bounded generated-speech provider check applied a 2 mm fixture change and returned text/audio; an isolated browser session applied 2.5 mm and ended cleanly. Human-microphone/audio-quality review remains manual. Hosted verification follows the source push; server environment readiness is not inferred from local success.

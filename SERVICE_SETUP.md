@@ -81,3 +81,8 @@ backend/.venv/Scripts/python.exe backend/check_configuration.py
 ```
 
 This prints configured/missing states only, never key values. Tell me **"keys configured"** when ready; no secret text is needed here. The local solver and UI work continue independently of this setup.
+
+
+## Presentation Deepgram integration (November 1)
+
+The owner requested live Deepgram in `demo/`. Local serving reads `demo/.env.local`, `demo/.env` and the existing `backend/.env` without printing keys. Add `DEEPGRAM_API_KEY` to the Vercel project server Environment Variables and redeploy; never use a frontend-public prefix. The demo now includes the token/config functions and actual streaming copilot. See [configuration and checks](docs/verification/DEEPGRAM_CHECKS.md). Supabase remains deferred and Modal execution disabled.

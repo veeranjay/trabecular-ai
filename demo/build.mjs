@@ -5,4 +5,4 @@ await build({ entryPoints: ['src/main.tsx'], bundle: true, outdir: 'dist', entry
 const html = (await readFile('index.html', 'utf8')).replace('<script type="module" src="/src/main.tsx"></script>', '<link rel="stylesheet" href="/app.css"><script type="module" src="/app.js"></script>');
 await writeFile('dist/index.html', html);
 await cp('public', 'dist', { recursive: true });
-console.log('Built self-contained browser demo in demo/dist. No backend or cloud services required.');
+console.log('Built presentation assets in demo/dist. Live Deepgram voice uses the optional server endpoints.');
