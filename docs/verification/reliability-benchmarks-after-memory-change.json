@@ -1,0 +1,385 @@
+{
+  "created_at_utc": "2026-10-28T10:30:12.689744+00:00",
+  "model": "3d-linear-elastic-cantilever-v1",
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "device_total_memory_bytes": 4294443008,
+  "independent_reference": {
+    "method": "NumPy/SciPy Hex8, 2x2x2 Gauss quadrature",
+    "resolution": [
+      16,
+      2,
+      2
+    ],
+    "relative_displacement_difference": 5.154750736992706e-08,
+    "passed": true,
+    "reference_relative_residual": 6.981001538226212e-11,
+    "reference_force_balance_error": 8.11173137067405e-11
+  },
+  "cpu_gpu": {
+    "resolution": [
+      16,
+      2,
+      2
+    ],
+    "relative_displacement_difference": 9.406458773826522e-13,
+    "passed": true
+  },
+  "refinement": [
+    {
+      "model": "3d-linear-elastic-cantilever-v1",
+      "method": "NVIDIA Warp 3D FEM",
+      "device": "cuda:0",
+      "device_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "resolution": [
+        32,
+        4,
+        4
+      ],
+      "degree": 1,
+      "position_bounds": [
+        [
+          0.0,
+          -2.0,
+          -2.0
+        ],
+        [
+          80.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "pinned_count": 25,
+      "tip_count": 25,
+      "nodes": 825,
+      "dofs": 2475,
+      "tip_deflection_mm": 0.062325071543455124,
+      "analytical_tip_deflection_mm": 0.07272727272727272,
+      "deflection_error_pct": 14.303026627749201,
+      "peak_cell_stress_mpa": 4.7755560874938965,
+      "iterations": 380,
+      "relative_residual": 9.368808505299413e-09,
+      "recursive_residual": 2.047943159789302e-09,
+      "absolute_tolerance": 2.1875e-09,
+      "solve_seconds": 0.02204459998756647,
+      "force_balance_error": 2.47242448695897e-09,
+      "moment_balance_error": 7.113357351865968e-09,
+      "preconditioner": "Jacobi",
+      "amg_levels": [],
+      "preconditioner_setup_seconds": 0.000340400030836463,
+      "reaction_force_n": [
+        -1.800197768631051e-10,
+        1.0000000012513288,
+        -2.1247710257910057e-09
+      ],
+      "applied_force_n": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "elapsed_seconds": 0.04203849995974451,
+      "qualified": false,
+      "scope": "3D rectangular cantilever calculation check; not anatomical validation."
+    },
+    {
+      "model": "3d-linear-elastic-cantilever-v1",
+      "method": "NVIDIA Warp 3D FEM",
+      "device": "cuda:0",
+      "device_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "resolution": [
+        64,
+        4,
+        4
+      ],
+      "degree": 1,
+      "position_bounds": [
+        [
+          0.0,
+          -2.0,
+          -2.0
+        ],
+        [
+          80.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "pinned_count": 25,
+      "tip_count": 25,
+      "nodes": 1625,
+      "dofs": 4875,
+      "tip_deflection_mm": 0.06919266283512115,
+      "analytical_tip_deflection_mm": 0.07272727272727272,
+      "deflection_error_pct": 4.860088601708408,
+      "peak_cell_stress_mpa": 5.286950588226318,
+      "iterations": 400,
+      "relative_residual": 9.494781237268705e-09,
+      "recursive_residual": 2.0736806015480954e-09,
+      "absolute_tolerance": 2.1875e-09,
+      "solve_seconds": 0.028750799945555627,
+      "force_balance_error": 3.058485230882395e-09,
+      "moment_balance_error": 6.54793872575769e-09,
+      "preconditioner": "Jacobi",
+      "amg_levels": [],
+      "preconditioner_setup_seconds": 0.000224500079639256,
+      "reaction_force_n": [
+        2.810360832938841e-10,
+        1.0000000018144182,
+        -2.44606568333694e-09
+      ],
+      "applied_force_n": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "elapsed_seconds": 0.047428500023670495,
+      "qualified": true,
+      "scope": "3D rectangular cantilever calculation check; not anatomical validation."
+    },
+    {
+      "model": "3d-linear-elastic-cantilever-v1",
+      "method": "NVIDIA Warp 3D FEM",
+      "device": "cuda:0",
+      "device_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "resolution": [
+        128,
+        4,
+        4
+      ],
+      "degree": 1,
+      "position_bounds": [
+        [
+          0.0,
+          -2.0,
+          -2.0
+        ],
+        [
+          80.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "pinned_count": 25,
+      "tip_count": 25,
+      "nodes": 3225,
+      "dofs": 9675,
+      "tip_deflection_mm": 0.07118215411901474,
+      "analytical_tip_deflection_mm": 0.07272727272727272,
+      "deflection_error_pct": 2.1245380863547276,
+      "peak_cell_stress_mpa": 5.392517566680908,
+      "iterations": 520,
+      "relative_residual": 9.901697373940578e-09,
+      "recursive_residual": 2.15717728535981e-09,
+      "absolute_tolerance": 2.1875e-09,
+      "solve_seconds": 0.04719489999115467,
+      "force_balance_error": 1.530143781253476e-09,
+      "moment_balance_error": 7.375356939292236e-09,
+      "preconditioner": "Jacobi",
+      "amg_levels": [],
+      "preconditioner_setup_seconds": 0.00025699997786432505,
+      "reaction_force_n": [
+        9.132647971199503e-10,
+        1.0000000004682357,
+        -1.1349197137633382e-09
+      ],
+      "applied_force_n": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "elapsed_seconds": 0.07220940000843257,
+      "qualified": true,
+      "scope": "3D rectangular cantilever calculation check; not anatomical validation."
+    }
+  ],
+  "tetrahedral_check": {
+    "model": "heterogeneous-tet4-check-v1",
+    "nodes": 45,
+    "tetrahedra": 96,
+    "independent_matrix_relative_error": 1.1829472108880417e-16,
+    "independent_solution_relative_error": 5.072236891202329e-12,
+    "affine_patch_relative_residual": 1.0643051948386101e-13,
+    "affine_energy_relative_error": 2.1411004196852415e-11,
+    "gpu_relative_residual": 6.689522353155977e-11,
+    "amg_aliased_action_relative_error": 8.30622460590226e-17,
+    "passed": true,
+    "scope": "Small heterogeneous Tet4 calculation check; excludes anatomical registration, screw bonds and mesh convergence."
+  },
+  "thin_plate_check": {
+    "name": "Conforming quadratic Tet10 thin-plate cantilever",
+    "dimensions_mm": [
+      24.0,
+      4.0,
+      1.5
+    ],
+    "linear_tet_diagnostic": {
+      "resolution": [
+        48,
+        4,
+        2
+      ],
+      "degree": 1,
+      "nodes": 735,
+      "tetrahedra": 2304,
+      "thickness_layers": 2,
+      "tip_deflection_mm": 0.019954442915942817,
+      "analytical_tip_deflection_mm": 0.03723636363636364,
+      "error_pct": 46.41140818472388,
+      "iterations": 40,
+      "relative_residual": 7.663333071570294e-10,
+      "recursive_residual": 2.1933783368549176e-10,
+      "absolute_tolerance": 2.8716768233521297e-10,
+      "solve_seconds": 0.016498800017870963,
+      "force_balance_error": 1.488126154245411e-10,
+      "moment_balance_error": 1.0756533084781195e-10,
+      "preconditioner": "GPU algebraic multigrid",
+      "amg_levels": [
+        2160,
+        192
+      ],
+      "preconditioner_setup_seconds": 0.03368170000612736,
+      "reaction_force_n": [
+        -5.799360991431968e-11,
+        -1.899908008695661e-11,
+        1.000000000135724
+      ],
+      "applied_force_n": [
+        0.0,
+        0.0,
+        -1.0000000000000002
+      ],
+      "elapsed_seconds": 0.12078930006828159
+    },
+    "force_n": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "series": [
+      {
+        "resolution": [
+          24,
+          4,
+          2
+        ],
+        "degree": 2,
+        "nodes": 2205,
+        "tetrahedra": 1152,
+        "thickness_layers": 2,
+        "tip_deflection_mm": 0.03679291428583014,
+        "analytical_tip_deflection_mm": 0.03723636363636364,
+        "error_pct": 1.1909040175460115,
+        "iterations": 80,
+        "relative_residual": 9.707208201215456e-10,
+        "recursive_residual": 1.4681251317695676e-10,
+        "absolute_tolerance": 1.9094065395649334e-10,
+        "solve_seconds": 0.05004110001027584,
+        "force_balance_error": 5.082681913634796e-10,
+        "moment_balance_error": 3.802504083884858e-10,
+        "preconditioner": "GPU algebraic multigrid",
+        "amg_levels": [
+          6480,
+          228
+        ],
+        "preconditioner_setup_seconds": 0.13914059998933226,
+        "reaction_force_n": [
+          9.05479025092859e-11,
+          9.131589928657036e-11,
+          1.0000000004917307
+        ],
+        "applied_force_n": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "elapsed_seconds": 0.41957769996952266
+      },
+      {
+        "resolution": [
+          48,
+          6,
+          4
+        ],
+        "degree": 2,
+        "nodes": 11349,
+        "tetrahedra": 6912,
+        "thickness_layers": 4,
+        "tip_deflection_mm": 0.03688505469324746,
+        "analytical_tip_deflection_mm": 0.03723636363636364,
+        "error_pct": 0.9434566343452019,
+        "iterations": 100,
+        "relative_residual": 1.893053008280094e-09,
+        "recursive_residual": 8.952431173321017e-11,
+        "absolute_tolerance": 1.1368545516489514e-10,
+        "solve_seconds": 0.4489584000548348,
+        "force_balance_error": 7.836401144877618e-10,
+        "moment_balance_error": 4.688434392529113e-10,
+        "preconditioner": "GPU algebraic multigrid",
+        "amg_levels": [
+          33696,
+          606
+        ],
+        "preconditioner_setup_seconds": 1.099493799963966,
+        "reaction_force_n": [
+          -4.688627264215484e-10,
+          2.443866498058611e-10,
+          1.0000000005783882
+        ],
+        "applied_force_n": [
+          0.0,
+          0.0,
+          -0.9999999999999984
+        ],
+        "elapsed_seconds": 2.35662560001947
+      },
+      {
+        "resolution": [
+          72,
+          8,
+          6
+        ],
+        "degree": 2,
+        "nodes": 32045,
+        "tetrahedra": 20736,
+        "thickness_layers": 6,
+        "tip_deflection_mm": 0.03690515910849381,
+        "analytical_tip_deflection_mm": 0.03723636363636364,
+        "error_pct": 0.8894652848066613,
+        "iterations": 100,
+        "relative_residual": 3.3036111763343386e-09,
+        "recursive_residual": 6.361658131383835e-11,
+        "absolute_tolerance": 8.128263826888629e-11,
+        "solve_seconds": 1.373020000057295,
+        "force_balance_error": 4.4786990554697094e-09,
+        "moment_balance_error": 3.398077500848736e-09,
+        "preconditioner": "GPU algebraic multigrid",
+        "amg_levels": [
+          95472,
+          1968,
+          162
+        ],
+        "preconditioner_setup_seconds": 2.2862667998997495,
+        "reaction_force_n": [
+          4.131490705105989e-10,
+          1.714689501497446e-11,
+          0.9999999955404282
+        ],
+        "applied_force_n": [
+          0.0,
+          0.0,
+          -0.9999999999999976
+        ],
+        "elapsed_seconds": 6.036524499999359
+      }
+    ],
+    "last_deflection_change_pct": 0.05447589370160463,
+    "passed": true,
+    "scope": "Quadratic hardware method check for 1.5 mm rectangular plate bending. Does not qualify an anatomically fitted plate mesh or screw bonds."
+  },
+  "passed": true,
+  "elapsed_seconds": 11.226957100094296,
+  "limitations": [
+    "Pass status covers the rectangular Hex8, small heterogeneous Tet4 and quadratic thin-plate calculation checks only.",
+    "The jaw uses linear bone elements and quadratic hardware elements; the assembled jaw still requires mesh and bond sensitivity studies.",
+    "These checks do not establish full-jaw memory budgets, osteotomy bonding or mesh qualification."
+  ]
+}

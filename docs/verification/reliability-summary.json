@@ -1,0 +1,92 @@
+{
+  "schema": "trab-reliability-summary-v1",
+  "tolerance": 0.05,
+  "anatomies": {
+    "female": {
+      "penalty_sensitivity": {
+        "same_discrete_model": true,
+        "last_changes": {
+          "peak_titanium_stress_mpa": 0.06941015962452575,
+          "compliance_n_mm": 0.07377174848992032
+        },
+        "last_attachment_slip_mm": 0.041179458436201896,
+        "passed": false
+      },
+      "exact_discrete_check": {
+        "passed": true,
+        "maximum_constraint_error_mm": 1.8312370734470878e-15,
+        "model": "jaw-exact-tet-v4",
+        "directory": "backend\\data\\reliability\\20261028T093520Z-penalty-exact\\female-preview-100"
+      },
+      "mesh_screen": {
+        "passed": false,
+        "state": "completed",
+        "levels": [
+          {
+            "quality": "preview",
+            "state": "completed",
+            "error": null,
+            "directory": "backend\\data\\reliability\\20261028T103154Z-mesh-exact\\female-preview-100"
+          },
+          {
+            "quality": "standard",
+            "state": "failed",
+            "error": "Stopped to preserve 750 MiB of available system memory.",
+            "directory": "backend\\data\\reliability\\20261028T103154Z-mesh-exact\\female-standard-100"
+          }
+        ]
+      },
+      "numerical_screen_passed": false
+    },
+    "male": {
+      "penalty_sensitivity": {
+        "same_discrete_model": true,
+        "last_changes": {
+          "peak_titanium_stress_mpa": 0.10862175172604698,
+          "compliance_n_mm": 0.09931441702954551
+        },
+        "last_attachment_slip_mm": 0.09698517615448388,
+        "passed": false
+      },
+      "exact_discrete_check": {
+        "passed": true,
+        "maximum_constraint_error_mm": 1.9868029630580076e-15,
+        "model": "jaw-exact-tet-v4",
+        "directory": "backend\\data\\reliability\\20261028T093520Z-penalty-exact\\male-preview-100"
+      },
+      "mesh_screen": {
+        "passed": false,
+        "state": "completed",
+        "levels": [
+          {
+            "quality": "preview",
+            "state": "completed",
+            "error": null,
+            "directory": "backend\\data\\reliability\\20261028T103154Z-mesh-exact\\male-preview-100"
+          },
+          {
+            "quality": "standard",
+            "state": "failed",
+            "error": "Stopped to preserve 750 MiB of available system memory.",
+            "directory": "backend\\data\\reliability\\20261028T103154Z-mesh-exact\\male-standard-100"
+          }
+        ]
+      },
+      "numerical_screen_passed": false
+    }
+  },
+  "physical_validation": false,
+  "scope": "Numerical checks for two frozen bilateral-load reference revisions at their recorded material settings. Strength and physical validity are separate.",
+  "numerical_screen_passed": false,
+  "qualified": false,
+  "limitations": [
+    "Three changing tetrahedral meshes and a 5% change screen do not establish a continuum uncertainty bound.",
+    "Anatomical/registration review, physical interface assumptions, mesh surface-error qualification and model applicability remain open.",
+    "A failing yield or linear-strain check cannot be repaired by relabeling a numerically converged answer."
+  ],
+  "source_reports": [
+    "20261028T091914Z-penalty-study.json",
+    "20261028T093520Z-penalty-exact-study.json",
+    "20261028T103154Z-mesh-exact-study.json"
+  ]
+}

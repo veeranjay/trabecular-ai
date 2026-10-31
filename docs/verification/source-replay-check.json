@@ -1,0 +1,10 @@
+{
+  "source_job_id": "bdce99c7-e8ca-4032-86b3-e6530cc6eb58",
+  "scope": "Archived-source numerical benchmark replay; does not qualify the fitted jaw model.",
+  "source_hashes_verified": true,
+  "original_checks_passed": true,
+  "replay_checks_passed": true,
+  "fine_plate_deflection_relative_difference": 5.3671139950581897e-11,
+  "tolerance": 1e-06,
+  "replay_elapsed_seconds": 11.553624399995897
+}

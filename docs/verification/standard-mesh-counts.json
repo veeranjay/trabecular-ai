@@ -1,0 +1,178 @@
+[
+  {
+    "anatomy": "male",
+    "quality": "standard",
+    "cache_key": "5f10da9334f5c729112f60795d1894da41b16f7d10a8f4fc7a108580787087df",
+    "linear_geometry_nodes": 105001,
+    "tetrahedra": 435497,
+    "titanium_tetrahedra": 188237,
+    "components": [
+      {
+        "id": "proximal_left",
+        "nodes": 11013,
+        "tetrahedra": 43989,
+        "surface_volume_relative_error": 3.247950499625923e-05
+      },
+      {
+        "id": "proximal_right",
+        "nodes": 8742,
+        "tetrahedra": 33771,
+        "surface_volume_relative_error": 5.511485760663467e-06
+      },
+      {
+        "id": "distal",
+        "nodes": 43289,
+        "tetrahedra": 169500,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "plate_left",
+        "nodes": 16543,
+        "tetrahedra": 76707,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_left_1",
+        "nodes": 938,
+        "tetrahedra": 3525,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_left_2",
+        "nodes": 938,
+        "tetrahedra": 3525,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_left_3",
+        "nodes": 938,
+        "tetrahedra": 3525,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_left_4",
+        "nodes": 938,
+        "tetrahedra": 3525,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "plate_right",
+        "nodes": 17910,
+        "tetrahedra": 83330,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_right_1",
+        "nodes": 938,
+        "tetrahedra": 3525,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_right_2",
+        "nodes": 938,
+        "tetrahedra": 3525,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_right_3",
+        "nodes": 938,
+        "tetrahedra": 3525,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_right_4",
+        "nodes": 938,
+        "tetrahedra": 3525,
+        "surface_volume_relative_error": 0.0
+      }
+    ]
+  },
+  {
+    "anatomy": "female",
+    "quality": "standard",
+    "cache_key": "8d51ec5746789754de3fa19ae045f661ddab92478326ffe5426013716cb82f52",
+    "linear_geometry_nodes": 126938,
+    "tetrahedra": 540110,
+    "titanium_tetrahedra": 220230,
+    "components": [
+      {
+        "id": "proximal_left",
+        "nodes": 12023,
+        "tetrahedra": 48200,
+        "surface_volume_relative_error": 5.6704511257144846e-05
+      },
+      {
+        "id": "proximal_right",
+        "nodes": 12020,
+        "tetrahedra": 48343,
+        "surface_volume_relative_error": 1.4202573737819892e-05
+      },
+      {
+        "id": "distal",
+        "nodes": 55137,
+        "tetrahedra": 223337,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "plate_left",
+        "nodes": 22037,
+        "tetrahedra": 104446,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_left_1",
+        "nodes": 740,
+        "tetrahedra": 2646,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_left_2",
+        "nodes": 740,
+        "tetrahedra": 2646,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_left_3",
+        "nodes": 740,
+        "tetrahedra": 2646,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_left_4",
+        "nodes": 740,
+        "tetrahedra": 2646,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "plate_right",
+        "nodes": 19801,
+        "tetrahedra": 94616,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_right_1",
+        "nodes": 740,
+        "tetrahedra": 2646,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_right_2",
+        "nodes": 740,
+        "tetrahedra": 2646,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_right_3",
+        "nodes": 740,
+        "tetrahedra": 2646,
+        "surface_volume_relative_error": 0.0
+      },
+      {
+        "id": "screw_right_4",
+        "nodes": 740,
+        "tetrahedra": 2646,
+        "surface_volume_relative_error": 0.0
+      }
+    ]
+  }
+]

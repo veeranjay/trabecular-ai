@@ -1,0 +1,22 @@
+[
+  {
+    "anatomy": "female",
+    "source_job_id": "6784fc75-2781-440c-8955-eccfc3cfd587",
+    "files": 30,
+    "bytes": 102341263,
+    "integrity_passed": true,
+    "independent_audit_included": true,
+    "current_fields_included": true,
+    "report_path": "output\\pdf\\trabecular-female-exact-report.pdf"
+  },
+  {
+    "anatomy": "male",
+    "source_job_id": "2c2870e6-43f9-46ce-94cd-d2527038b7ea",
+    "files": 75,
+    "bytes": 83127863,
+    "integrity_passed": true,
+    "independent_audit_included": true,
+    "current_fields_included": true,
+    "report_path": "output\\pdf\\trabecular-male-exact-report.pdf"
+  }
+]

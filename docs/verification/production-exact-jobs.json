@@ -1,0 +1,64 @@
+[
+  {
+    "anatomy": "female",
+    "job_id": "6784fc75-2781-440c-8955-eccfc3cfd587",
+    "case_id": "3cae64b8-c5e8-4448-9f69-51448d72e2c2",
+    "revision_id": "c36154c4-d3bd-4461-a6f5-571865e268f7",
+    "state": "completed",
+    "stage": "Complete",
+    "surface_fields_passed": true,
+    "model": "jaw-exact-tet-v4",
+    "independent_check": {
+      "passed": true,
+      "metrics": {
+        "free_force_relative_residual": 2.093321479584734e-08,
+        "force_balance_error": 1.236925473330539e-10,
+        "moment_balance_error": 3.089715687104038e-10,
+        "energy_work_relative_error": 1.545049284273074e-10,
+        "stress_relative_difference": 4.872575945706015e-12,
+        "attachment_partition_error": 4.440892098500626e-16,
+        "attachment_position_error_mm": 3.2171190647067566e-14,
+        "exact_attachment_slip_mm": 1.8312370734470878e-15,
+        "load_normalization_error": 3.913450760032552e-14
+      },
+      "field_sha256": "2e72a5e53744c95d6cc4783865550d5baa241a8ac945d8d64ec668349f26af08",
+      "verifier_source_sha256": "2b0a7ec3ff475b4433892f066ee87fde266a23552a11b3958f6ae8ecbfc93eb9",
+      "scope": "Verifies algebra and exported fields for this discrete model. Does not establish mesh convergence, attachment insensitivity, anatomical validity or physical accuracy."
+    },
+    "peak_titanium_stress_mpa": 4526.198707059896,
+    "max_displacement_mm": 8.059987051201599,
+    "qualified": false,
+    "elapsed_seconds": 76.5194005999947
+  },
+  {
+    "anatomy": "male",
+    "job_id": "2c2870e6-43f9-46ce-94cd-d2527038b7ea",
+    "case_id": "fdde03c6-1902-4411-96f7-6b1993afd424",
+    "revision_id": "0e94b561-4576-46cf-ae7d-ecb2c195d2a5",
+    "state": "completed",
+    "stage": "Complete",
+    "surface_fields_passed": true,
+    "model": "jaw-exact-tet-v4",
+    "independent_check": {
+      "passed": true,
+      "metrics": {
+        "free_force_relative_residual": 5.554579204837475e-08,
+        "force_balance_error": 8.005650338056225e-11,
+        "moment_balance_error": 1.5593217188060546e-10,
+        "energy_work_relative_error": 3.4575272453403914e-11,
+        "stress_relative_difference": 7.282718107968717e-12,
+        "attachment_partition_error": 4.440892098500626e-16,
+        "attachment_position_error_mm": 2.6107007145801953e-14,
+        "exact_attachment_slip_mm": 3.662079734488538e-15,
+        "load_normalization_error": 3.257565157792459e-14
+      },
+      "field_sha256": "c3625d6f671f80be4dce8b5b9a18ffe25bdaa345cef64d51235fae77fb6050c3",
+      "verifier_source_sha256": "2b0a7ec3ff475b4433892f066ee87fde266a23552a11b3958f6ae8ecbfc93eb9",
+      "scope": "Verifies algebra and exported fields for this discrete model. Does not establish mesh convergence, attachment insensitivity, anatomical validity or physical accuracy."
+    },
+    "peak_titanium_stress_mpa": 14666.173243530926,
+    "max_displacement_mm": 12.06680949492834,
+    "qualified": false,
+    "elapsed_seconds": 170.8999934999738
+  }
+]

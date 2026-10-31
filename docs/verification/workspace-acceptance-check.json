@@ -1,0 +1,58 @@
+{
+  "frontend_origins": {
+    "localhost": 200,
+    "127.0.0.1": 200,
+    "cross_origin_blocked": 403
+  },
+  "female_solve": {
+    "model": "jaw-locking-tet-v3",
+    "nodes": 262820,
+    "tetrahedra": 434891,
+    "dofs": 788460,
+    "regions_node_counts": {
+      "condyle_left": 484,
+      "condyle_right": 583,
+      "bite_left": 1481,
+      "bite_right": 1189
+    },
+    "solve_seconds": 27.839387899963185,
+    "elapsed_seconds": 85.54671099991538,
+    "relative_residual": 2.432047184311325e-08,
+    "force_balance_error": 3.8669062808324225e-11,
+    "moment_balance_error": 1.7783883461817814e-10,
+    "peak_titanium_stress_mpa": 5332.960164760234,
+    "safety_factor": 0.16501154571057333,
+    "max_displacement_mm": 9.275053552608995,
+    "max_bond_slip_mm": 0.08134197441543276,
+    "max_locking_slip_mm": 0.0008231342791170314,
+    "qualified": false,
+    "numerically_resolved": true,
+    "job_id": "664bc539-b0b1-4075-93a7-ce6850f2e110",
+    "revision_id": "c36154c4-d3bd-4461-a6f5-571865e268f7",
+    "source_snapshot": true,
+    "volume_arrays_finite": true
+  },
+  "male_package": {
+    "files": 69,
+    "bytes": 43344207,
+    "integrity_passed": true,
+    "named_stls": 13,
+    "numerical_source_archives": 1
+  },
+  "female_package": {
+    "files": 25,
+    "bytes": 53039219,
+    "integrity_passed": true,
+    "named_stls": 13,
+    "numerical_source_archives": 1
+  },
+  "search_check": {
+    "job_id": "648cd51f-a74d-4455-a090-2a8a991cd0a4",
+    "state": "cancelled",
+    "candidates": 15,
+    "rejected_geometry": 12,
+    "failed": 2,
+    "interrupted": 1,
+    "winner": null
+  }
+}

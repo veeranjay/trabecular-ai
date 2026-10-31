@@ -1,0 +1,46 @@
+[
+  {
+    "anatomy": "male",
+    "source_job": "74b1a7ec-d15c-441f-8ecc-f860aa545d28",
+    "peak_titanium_component": "plate_left",
+    "peak_titanium_cell_mean_ratio_quality": 0.14219832743348873,
+    "peak_titanium_cell_volume_mm3": 4.2651266731194723e-05,
+    "quality_definition": "12*(3*V)^(2/3) / sum(six squared edge lengths); regular tetrahedron = 1",
+    "material_quality": {
+      "bone": {
+        "minimum": 0.0003496831691620417,
+        "percentile_1": 0.1486318803813268,
+        "below_0_01": 163,
+        "elements": 237130
+      },
+      "titanium": {
+        "minimum": 0.05294596698631887,
+        "percentile_1": 0.34265764669170606,
+        "below_0_01": 0,
+        "elements": 96488
+      }
+    }
+  },
+  {
+    "anatomy": "female",
+    "source_job": "664bc539-b0b1-4075-93a7-ce6850f2e110",
+    "peak_titanium_component": "screw_left_2",
+    "peak_titanium_cell_mean_ratio_quality": 0.745622686485521,
+    "peak_titanium_cell_volume_mm3": 0.0023425858995472,
+    "quality_definition": "12*(3*V)^(2/3) / sum(six squared edge lengths); regular tetrahedron = 1",
+    "material_quality": {
+      "bone": {
+        "minimum": 0.0001280865198550206,
+        "percentile_1": 0.20460457790216524,
+        "below_0_01": 69,
+        "elements": 322583
+      },
+      "titanium": {
+        "minimum": 0.051266544136089574,
+        "percentile_1": 0.339788861415859,
+        "below_0_01": 0,
+        "elements": 112308
+      }
+    }
+  }
+]

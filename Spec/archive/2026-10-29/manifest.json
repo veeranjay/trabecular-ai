@@ -1,0 +1,70 @@
+[
+  {
+    "path": "Analysis.md",
+    "sha256": "0590a6163dff23b080335f75334e7f51165696648fe4ce7b441377d4021d03c5"
+  },
+  {
+    "path": "MVP_Revised_Plan.md",
+    "sha256": "68c069f376ca12421bcd8520f999cd62fec70267698717a76165b2bbc59b5d76"
+  },
+  {
+    "path": "MVP_Spec.md",
+    "sha256": "1c2af37cb330388ee5c92a4cee742b7572b9cf403c61e988971ca47121002d8d"
+  },
+  {
+    "path": "Project_Spec_detailed.md",
+    "sha256": "a2d47c58b5a20eac852dfb6e22bec0138a402a6d22832ef6da5b76b4e155ba52"
+  },
+  {
+    "path": "Project_Spec.md",
+    "sha256": "dacbc63812267ffcbf1269b33ce37fccf353120f0eee182437f7efd50a197ac8"
+  },
+  {
+    "path": "PROPOSED_REVISIONS.md",
+    "sha256": "47e36092a8dfcc74d6a6582e0af7b13d382b4fb6d5e2da3284b6853607122da3"
+  },
+  {
+    "path": "Revised/ARCHITECTURE_AND_VALIDATION.md",
+    "sha256": "3ae95bccdc6305f974f29a730beeac3c76d33b1fbd8de0a403effb61bd0bb231"
+  },
+  {
+    "path": "Revised/COMMERCIAL_VALIDATION.md",
+    "sha256": "6a76c286a22a6677618a7ef675dc69c3b3469259fd36457ebe0a57683a9db931"
+  },
+  {
+    "path": "Revised/DUE_DILIGENCE.md",
+    "sha256": "3b2465eda6daab9b21e20a7cbfa949567965fa23beee6fde535018719b273ffb"
+  },
+  {
+    "path": "Revised/EVIDENCE_LEDGER.md",
+    "sha256": "1b1dce5b3002fd5077f7a046b28213f0282e6b4bff97a50be7144049e87a542a"
+  },
+  {
+    "path": "Revised/FRAMING_CORRECTION.md",
+    "sha256": "1d1e3f5cd7de4a78ab758b5626b9de488292737c9f19c3043b6c6573f3e7e73e"
+  },
+  {
+    "path": "Revised/MVP_SPEC.md",
+    "sha256": "3ce789ec77aa51f464f97e814fda1c84f5fd3cb82ffbce124881c03a0ce90974"
+  },
+  {
+    "path": "Revised/OPPORTUNITY_PORTFOLIO.md",
+    "sha256": "cb221a09a6689b44875a463dbec6a9c6e5f435429256291e79299cd60454dcdc"
+  },
+  {
+    "path": "Revised/PRODUCT_SPEC.md",
+    "sha256": "dfde95abd05b936b1e4bc72f4c40bd53fd0862eea4949a7eff2016747554ac3c"
+  },
+  {
+    "path": "Revised/README.md",
+    "sha256": "e91e321355071869aae7793f3b786968c56d8a76a394fdc4161a200cebec01f7"
+  },
+  {
+    "path": "Revised/STRATEGY_AND_MOATS.md",
+    "sha256": "a6e6bc4fe11f834d3ec04fa25ff05f0c8c72040dbdf9e05f37b5969da78d8c7d"
+  },
+  {
+    "path": "Revised/YC_BRIEF_AND_ROADMAP.md",
+    "sha256": "3d93ec75bcfa2d7954f6ebab34eebc7605dab062d7324d161e615f6ad32b0629"
+  }
+]

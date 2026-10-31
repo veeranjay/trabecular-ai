@@ -1,0 +1,57 @@
+{
+  "schema": "trab-independent-jaw-audit-v1",
+  "model": "jaw-locking-tet-v3",
+  "geometry_hash": "afbcd6f154565546588ba4418ce3579ab9ff17f2e26340433723052c8075bb0f",
+  "field_sha256": "2c23b2b96fac66b86c9e23790070d7d1d033a90315a4835f65deefd8ff85507a",
+  "nodes": 262820,
+  "tetrahedra": 434891,
+  "method": "Independent NumPy engineering-strain B/D matrix action, four-point integration, explicit penalty forces",
+  "thresholds": {
+    "free_force_relative_residual": 1e-06,
+    "force_balance_error": 1e-06,
+    "moment_balance_error": 1e-06,
+    "energy_work_relative_error": 1e-06,
+    "stress_relative_difference": 1e-08,
+    "attachment_partition_error": 1e-10,
+    "attachment_position_error_mm": 1e-06
+  },
+  "metrics": {
+    "free_force_relative_residual": 2.383760427968106e-08,
+    "force_balance_error": 3.867243743213415e-11,
+    "moment_balance_error": 1.7783974879775859e-10,
+    "energy_work_relative_error": 2.8194846443302073e-11,
+    "stress_relative_difference": 5.103722610094803e-12,
+    "attachment_partition_error": 4.440892098500626e-16,
+    "attachment_position_error_mm": 3.2171190647067566e-14
+  },
+  "checks": {
+    "free_force_relative_residual": true,
+    "force_balance_error": true,
+    "moment_balance_error": true,
+    "energy_work_relative_error": true,
+    "stress_relative_difference": true,
+    "attachment_partition_error": true,
+    "attachment_position_error_mm": true
+  },
+  "passed": true,
+  "elastic_energy_n_mm": 1340.8297234481022,
+  "attachment_energy_n_mm": 134.24033261616773,
+  "external_work_n_mm": 2950.140112045361,
+  "compliance_n_mm": 2950.140112045361,
+  "load_weighted_displacement_mm": 5.6733463693182244,
+  "peak_titanium_stress_mpa": 5332.960164760042,
+  "max_stress_difference_mpa": 1.4291890693129972e-07,
+  "minimum_volume_mm3": 1.0013335302349841e-08,
+  "applied_force_n": [
+    0.0,
+    -519.9999999999797,
+    0.0
+  ],
+  "reaction_force_n": [
+    1.658163739648444e-08,
+    519.9999999897982,
+    5.077997577984661e-09
+  ],
+  "elapsed_seconds": 2.187084500095807,
+  "scope": "Verifies algebra and exported fields for this discrete model. Does not establish mesh convergence, attachment insensitivity, anatomical validity or physical accuracy."
+}

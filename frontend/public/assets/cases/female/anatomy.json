@@ -1,0 +1,194 @@
+{
+  "id": "female",
+  "name": "Visible Human \u00b7 Female mandible",
+  "source_url": "https://huggingface.co/datasets/BoneHub/visible-human-3d-models",
+  "source_paper": "https://doi.org/10.1038/s41597-022-01905-2",
+  "dataset_doi": "https://doi.org/10.57967/hf/10464",
+  "authors": "S. H. Alavi & M. Asseln (2026)",
+  "license": "CC BY 4.0",
+  "source_sha256": "1507a95eb5a26470a1b98de94df691862525d942ba5d3111db317fc2b36545b9",
+  "triangles": 75708,
+  "units": "mm",
+  "bounds": [
+    [
+      -60.00714874267578,
+      -40.63055419921875,
+      -44.958900451660156
+    ],
+    [
+      60.00714874267578,
+      40.63055419921875,
+      44.958900451660156
+    ]
+  ],
+  "transform": {
+    "source_center": [
+      238.78923797607422,
+      179.10388946533203,
+      1556.0300903320312
+    ],
+    "axes": [
+      "x",
+      "z",
+      "-y"
+    ]
+  },
+  "segments": {
+    "proximal_left": {
+      "url": "/assets/cases/female/proximal_left.stl",
+      "volume_mm3": 7819.579795065893,
+      "triangles": 14266
+    },
+    "proximal_right": {
+      "url": "/assets/cases/female/proximal_right.stl",
+      "volume_mm3": 6933.529465867409,
+      "triangles": 14036
+    },
+    "distal": {
+      "url": "/assets/cases/female/distal.stl",
+      "volume_mm3": 33328.608216693225,
+      "triangles": 50434
+    }
+  },
+  "reference_url": "/assets/cases/female/reference.stl",
+  "plate_anchors": {
+    "left": [
+      [
+        -49.03953,
+        -15.14093,
+        -19.85148
+      ],
+      [
+        -45.08389,
+        -21.42206,
+        -6.12455
+      ],
+      [
+        -36.0057,
+        -27.51471,
+        15.58857
+      ],
+      [
+        -23.73402,
+        -28.41302,
+        28.74479
+      ]
+    ],
+    "right": [
+      [
+        44.47587,
+        -19.26605,
+        -23.12145
+      ],
+      [
+        44.08335,
+        -10.99774,
+        -16.74422
+      ],
+      [
+        33.12421,
+        -28.03485,
+        12.99984
+      ],
+      [
+        21.88258,
+        -29.01617,
+        27.49163
+      ]
+    ]
+  },
+  "regions": [
+    {
+      "id": "condyle_left",
+      "kind": "support",
+      "center": [
+        -52.378,
+        40.6306,
+        -32.6225
+      ],
+      "radius": 7.0,
+      "source": "developer_reference"
+    },
+    {
+      "id": "condyle_right",
+      "kind": "support",
+      "center": [
+        51.7351,
+        39.5073,
+        -36.2365
+      ],
+      "radius": 7.0,
+      "source": "developer_reference"
+    },
+    {
+      "id": "bite_left",
+      "kind": "load",
+      "center": [
+        -24.8201,
+        -15.7068,
+        14.8592
+      ],
+      "radius": 10.0,
+      "vector": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source": "developer_reference"
+    },
+    {
+      "id": "bite_right",
+      "kind": "load",
+      "center": [
+        21.7136,
+        -10.0783,
+        27.3102
+      ],
+      "radius": 10.0,
+      "vector": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "source": "developer_reference"
+    },
+    {
+      "id": "nerve_left",
+      "kind": "keep_out",
+      "center": [
+        -38.0057,
+        -32.5147,
+        21.5886
+      ],
+      "radius": 4.0,
+      "source": "developer_reference"
+    },
+    {
+      "id": "nerve_right",
+      "kind": "keep_out",
+      "center": [
+        35.1242,
+        -33.0348,
+        18.9998
+      ],
+      "radius": 4.0,
+      "source": "developer_reference"
+    }
+  ],
+  "cut_parameters": {
+    "lateral_x": 42.00500411987304,
+    "medial_x": 36.00428924560547,
+    "posterior_z": -22.479450225830078,
+    "anterior_z": 6.294246063232422,
+    "ramus_y": 9.345027465820312,
+    "ramus_z": -10.340547103881836
+  },
+  "geometry_quality": {
+    "watertight": true,
+    "positive_volume": true,
+    "partition_volume_relative_error": 1.3408136360687717e-11
+  },
+  "osteotomy": "Developer-prepared stepped bilateral sagittal-split reference; anatomical/domain review outstanding.",
+  "contact_model": "Mechanically distinct segments; no frictional/contact model. No clinical validation.",
+  "registration": "Developer reference load/support/nerve annotations; editable and not inferred patient landmarks."
+}

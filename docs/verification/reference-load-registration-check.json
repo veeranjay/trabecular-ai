@@ -1,0 +1,154 @@
+[
+  {
+    "anatomy": "male",
+    "before": {
+      "bite_left": {
+        "id": "bite_left",
+        "kind": "load",
+        "center": [
+          -25.0,
+          -8.0,
+          18.0
+        ],
+        "radius": 10.0,
+        "vector": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "source": "developer_reference"
+      },
+      "bite_right": {
+        "id": "bite_right",
+        "kind": "load",
+        "center": [
+          25.0,
+          -8.0,
+          18.0
+        ],
+        "radius": 10.0,
+        "vector": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "source": "developer_reference"
+      }
+    },
+    "after": {
+      "bite_left": {
+        "id": "bite_left",
+        "kind": "load",
+        "center": [
+          -26.554,
+          -8.2349,
+          18.7646
+        ],
+        "radius": 10.0,
+        "vector": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "source": "developer_reference"
+      },
+      "bite_right": {
+        "id": "bite_right",
+        "kind": "load",
+        "center": [
+          22.374,
+          -7.8119,
+          20.4676
+        ],
+        "radius": 10.0,
+        "vector": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "source": "developer_reference"
+      }
+    },
+    "nearest_distal_vertex_distance_mm": {
+      "bite_left": 6.100541786569423e-05,
+      "bite_right": 5.9502765633211216e-05
+    }
+  },
+  {
+    "anatomy": "female",
+    "before": {
+      "bite_left": {
+        "id": "bite_left",
+        "kind": "load",
+        "center": [
+          -25.0,
+          -8.0,
+          18.0
+        ],
+        "radius": 10.0,
+        "vector": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "source": "developer_reference"
+      },
+      "bite_right": {
+        "id": "bite_right",
+        "kind": "load",
+        "center": [
+          25.0,
+          -8.0,
+          18.0
+        ],
+        "radius": 10.0,
+        "vector": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "source": "developer_reference"
+      }
+    },
+    "after": {
+      "bite_left": {
+        "id": "bite_left",
+        "kind": "load",
+        "center": [
+          -24.8201,
+          -15.7068,
+          14.8592
+        ],
+        "radius": 10.0,
+        "vector": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "source": "developer_reference"
+      },
+      "bite_right": {
+        "id": "bite_right",
+        "kind": "load",
+        "center": [
+          21.7136,
+          -10.0783,
+          27.3102
+        ],
+        "radius": 10.0,
+        "vector": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "source": "developer_reference"
+      }
+    },
+    "nearest_distal_vertex_distance_mm": {
+      "bite_left": 5.5793939958824804e-05,
+      "bite_right": 4.299535101152552e-05
+    },
+    "revision_id": "45a20a1c-86e9-4f4a-ad45-15f2cc640ee0",
+    "review_required": true
+  }
+]

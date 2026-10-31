@@ -1,0 +1,25 @@
+{
+  "schema": "trab-reliability-study-v1",
+  "mode": "mesh",
+  "attachment_formulation": "exact",
+  "created_at_utc": "20261028T103844Z",
+  "scope": "Local engineering numerical verification; unchanged saved case inputs. No physical qualification claim.",
+  "source_jobs": {
+    "female": "664bc539-b0b1-4075-93a7-ce6850f2e110",
+    "male": "74b1a7ec-d15c-441f-8ecc-f860aa545d28"
+  },
+  "runs": [
+    {
+      "anatomy": "female",
+      "state": "failed",
+      "error": "Stopped to preserve 750 MiB of available system memory.",
+      "quality": "standard",
+      "attachment_formulation": "exact",
+      "bond_penalty_scale": 100.0,
+      "directory": "backend\\data\\reliability\\20261028T103844Z-mesh-exact\\female-standard-100",
+      "elapsed_seconds": 84.76500000001397,
+      "minimum_system_memory_available_bytes": 115470336
+    }
+  ],
+  "state": "completed"
+}
