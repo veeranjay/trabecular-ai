@@ -20,7 +20,7 @@ The initial real-provider checks exposed a rejected Settings field: `client_side
 - Offline tests cover credential isolation, request validation, fixed token lifetime, sanitized provider failures, optional access-code gating, throttling, concurrent grants, allowed tool values, duplicate calls and stale/closed sessions.
 - [Live provider evidence](deepgram-live-check.json): generated speech was transcribed, `update_design` applied thickness 2 mm to the fixture, assistant text arrived and 142,080 bytes of output audio were received in 9.889 seconds. No human microphone was recorded. This check is explicitly invoked, bounded and excluded from normal build/CI.
 - Local browser review used isolated `?qa=1` storage and a real Deepgram session: a typed command changed the displayed slider from 2 to 2.5 mm, the agent confirmed it, and End session returned to idle. Browser output was muted during review; audible quality and a human microphone remain manual checks. Screenshot: `output/deepgram-voice-review.png`.
-- Hosted endpoint verification is recorded below after the source push. Local success alone does not establish Vercel environment readiness.
+- Hosted verification passed at https://trabecular-ai-demo.vercel.app/ after GitHub commit `96685ef`: Vercel reported deployment completed, `/api/voice-config` returned HTTP 200 with `configured: true`, and a real browser command changed the displayed thickness from 1.5 to 2.3 mm. The agent confirmed 2.3 mm; End session returned to idle. This exercised the deployed token function and direct provider connection without recording a human microphone. Screenshot: `output/deepgram-hosted-review.png`.
 
 ## Access and spend limits
 
