@@ -40,3 +40,18 @@ Evidence: [Modal access verification](../verification/MODAL_ACCESS.md). The loca
 
 **Changed:** Established separate architecture and code logs, mandatory agent read/update instructions and links from the spec index, retaining the detailed audit.
 **Why:** Make decisions and their rationale easy to recover between tasks without confusing intended architecture with implemented or verified behavior.
+
+## 2026-10-31 · TRAB-006 · Submission delivery scope · Implemented; full MVP preserved
+
+**Changed:** Separated the browser-only presentation from the engineering app using demo/buildathon and the pre-demo-2026-10-31 checkpoint.
+**Why:** Meet the immediate selection deadline without replacing the intended SDF engine, production work or saved engineering evidence.
+
+## 2026-10-31 · TRAB-007 · Voice boundary · Browser voice implemented; Deepgram deferred
+
+**Changed:** Added browser-managed recognition/synthesis as a separate voice mode sharing the same design action dispatcher as direct and typed controls.
+**Why:** Provide usable speech interaction without exposing provider keys or claiming an unconfigured Deepgram connection.
+
+## 2026-10-31 · TRAB-008 · Interaction and rendering · Implemented; owner review pending
+
+**Changed:** Moved navigation to an expanding floating glass dock, reduced workspace copy and reused existing v5 CAD hardware for presentation rendering.
+**Why:** Address owner feedback about clutter, static navigation and unrealistic metal without running new numerical analyses.

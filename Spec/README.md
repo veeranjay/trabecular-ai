@@ -2,6 +2,8 @@
 
 Current source of truth, revised **October 30, 2026** following approval of the due-diligence revisions. Implementation and bounded checks are resumed. Deepgram and Supabase live integration are deferred; keep their scaffolds. Modal credentials are detected; billing/execution verification is separate.
 
+**Current submission scope, October 31:** an isolated [presentation workspace](DEMO.md) in `demo/` on `demo/buildathon`; the full engineering checkpoint is preserved on `mvp-baseline` / `pre-demo-2026-10-31`. Publication is on hold for owner review.
+
 | File | Purpose |
 |---|---|
 | [PROJECT.md](PROJECT.md) | Platform identity, pillars and expansion horizons |

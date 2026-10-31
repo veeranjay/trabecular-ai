@@ -61,3 +61,41 @@ Append a concise record for each logical change batch: reason, files/area, verif
 **Verification:** Relative links and referenced files verified; each initial log entry has single-line Changed/Why fields; backfill uses existing audit records; JSONL parses with unique IDs. Documentation-only; no calculations or application code changes.
 
 **Files:** `docs/logs/ARCHITECTURE.md`, `docs/logs/CODE_CHANGES.md`, `AGENTS.md`, `Spec/README.md`, `Spec/MVP.md`, `Spec/AUDIT.md`, `docs/audit/changes.jsonl`.
+
+## TRAB-006 · 2026-10-31 · isolated presentation workspace
+
+**Changed:** Initialized local Git, captured engineering source at 69ab06c286218e5a0146199fc8fbbe14bca502f0, tagged pre-demo-2026-10-31 and created demo/buildathon with independent demo/ source, assets and static build.
+
+**Reason:** Owner prioritized a self-contained selection presentation while preserving the exact engineering continuation point.
+
+**Verification:** Standalone build and TypeScript pass; browser tour, parameter editing, candidate application and four download formats checked. Original backend/frontend source and private runtime data unchanged. Sites registered privately; publication held per owner instruction.
+
+**Files:** `demo/`, `Spec/DEMO.md`, `Spec/README.md`, `AGENTS.md`.
+
+## TRAB-007 · 2026-10-31 · browser voice copilot
+
+**Changed:** Added user-started microphone recognition, transcripts, actual mic metering, spoken replies, stop/mute/cleanup, shared parameter/camera/response/search/study commands and typed fallback.
+
+**Reason:** Owner requires a voice copilot for the buildathon; browser speech supports the standalone presentation while Deepgram remains unconfigured.
+
+**Verification:** TypeScript/build pass; typed natural-language command changed thickness from 1.8 to 2 mm in the actual controls; phone layout checked without horizontal overflow. Live human microphone recognition and audible quality are not yet verified. Browser speech may use a network service; it is not an active Deepgram session.
+
+**Files:** `demo/src/VoiceCopilot.tsx`, `demo/src/main.tsx`.
+
+## TRAB-008 · 2026-10-31 · presentation UI and reference hardware
+
+**Changed:** Removed decorative canvas copy and persistent Interactive demo badge, added frosted expanding hover/focus navigation and voice surfaces, and replaced hand-built hardware with existing v5 contoured CAD assets plus lightweight display morphs.
+
+**Reason:** Owner requested less textual clutter, better titanium appearance, dynamic floating navigation, stronger glass and satisfying transitions.
+
+**Verification:** Real existing CAD exported in about 4 seconds total without a new FEM solve; current build/typecheck pass. Browser screenshots confirm compact titles, silver hardware, expanded dock, SDF field and phone copilot layout. Reduced-motion overrides included; no clinical/analysis-ready CAD claim for display morphs.
+
+**Files:** `demo/src/Viewport.tsx`, `demo/src/style.css`, `demo/src/main.tsx`, `demo/public/assets/cases/female/hardware.json`, `demo/public/assets/cases/male/hardware.json`.
+
+## TRAB-009 · 2026-10-31 · presentation verification and portable package
+
+**Changed:** Verified the nine-step tour, shared copilot action path, speech playback start/stop, 18-row study CSV, download integrity and phone layout; packaged the standalone distribution.
+
+**Reason:** Make the presentation reviewable and portable without backend setup while distinguishing measured UI behavior from unfinished live voice/numerical validation.
+
+**Verification:** TypeScript and static build pass; ZIP integrity passes; no backend/frontend engineering source diff versus mvp-baseline. Live human microphone recognition/audio quality remain unverified; public deployment held.

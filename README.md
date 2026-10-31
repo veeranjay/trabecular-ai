@@ -1,5 +1,7 @@
 # Trabecular
 
+Current presentation work: the standalone [demo workspace](demo/README.md) runs at `http://127.0.0.1:3100/`, with no engineering backend or API keys. Source branch: `demo/buildathon`. The pre-demo engineering checkpoint is preserved on `mvp-baseline`, tagged `pre-demo-2026-10-31`. [Submission scope](Spec/DEMO.md). Publication is currently on hold for review.
+
 A dark engineering workspace for preparing reference mandibles, editing bilateral fixation assemblies, running experimental 3D elasticity and retaining reproducible evidence.
 
 The expanded MVP is in progress for completion before October 31. The current jaw model is **unqualified**. Its calculated stress, residuals and timing are real; completing a solve does not make the design validated or clinically safe.

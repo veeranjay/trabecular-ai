@@ -1,5 +1,7 @@
 # Trabecular working agreement
 
+- Current submission work is the self-contained presentation in `demo/` on `demo/buildathon`; read `Spec/DEMO.md` and `demo/README.md`. The exact pre-demo engineering source is preserved at `mvp-baseline` / `pre-demo-2026-10-31`. Keep presentation proxies separate from production numerical code and label their provenance in methods/exports. Browser voice is not Deepgram. Publication is currently on hold at the owner's request.
+
 - At the start of every task, read `Spec/README.md`, [the architecture/system design log](docs/logs/ARCHITECTURE.md) and [the backend/frontend code log](docs/logs/CODE_CHANGES.md), then the relevant current spec. As logs grow, read recent entries and search earlier relevant decisions before editing. Preserve the original multi-horizon platform; CMF is the first showcase. Do not silently pivot or replace the intended SDF/immersed primary engine with tetrahedral analysis.
 - Keep tetrahedral analysis and saved evidence as a named reference/checker. Numerical checks, model applicability and clinical validation are different claims. Never fabricate results or a passing design.
 - Append a record for every logical change batch to `Spec/AUDIT.md` and `docs/audit/changes.jsonl`: date, ID, area/files, concise change, reason, verification and open gates. Group related edits; this is not a keystroke log. Never record secrets.

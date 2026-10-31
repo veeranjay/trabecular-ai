@@ -1,0 +1,14 @@
+# Submission presentation scope
+
+October 31, 2026. The owner replaced immediate full-MVP delivery with an isolated, self-contained presentation version covering the intended workflow. The [full MVP](MVP.md) and platform horizons remain the engineering target. This is a temporary delivery scope, not an architectural pivot or evidence of numerical qualification.
+
+- Preserve the exact pre-demo engineering source under `mvp-baseline` / `pre-demo-2026-10-31`; build presentation code only in `demo/` on `demo/buildathon`.
+- Include a polished landing page, first-visit interactive tour, cases/import, prepare/design/response/comparison/evidence, design exploration, cohort studies, history and SDF Lab.
+- Include a working browser voice copilot with microphone capture, transcript, spoken replies, shared design/camera/study actions, explicit start/stop, mute, failure handling and typed fallback. Deepgram remains unconfigured; never label browser speech as Deepgram.
+- Direct controls, browser persistence, downloads and analytical SDF visualization operate locally; heavy mechanics and orchestration may be illustrative behind the scenes. Keep simulated physics distinguishable in methods, field labels and exported provenance. No invented validation or clinical claims.
+- Keep the workspace concise: functional titles and units, no decorative canvas copy or repeated presentation badges. Use subdued titanium, real contoured hardware, frosted glass, smooth transitions, reduced motion and a floating navigation dock expanding on hover/focus.
+- Landing page and presentation transitions may be more expressive, within reconstruction → cohort → connected applications rather than an unrelated product.
+- All application assets ship locally. Browser-managed speech may need its own network service and supported browser. No cloud numerical jobs, external AI keys or private case uploads are needed.
+- Current owner instruction: **hold publication** while reviewing voice and visual changes. No public access change or deployment is authorized by the prior unanswered access question.
+
+Implementation/launch/recovery notes: [demo README](../demo/README.md). Concise history: [architecture log](../docs/logs/ARCHITECTURE.md), [code log](../docs/logs/CODE_CHANGES.md). Full engineering code and numerical artifacts remain separate.

@@ -1,0 +1,54 @@
+{
+  "id": "visible-human-male",
+  "name": "Visible Human \u00b7 mandible",
+  "source_url": "https://huggingface.co/datasets/BoneHub/visible-human-3d-models",
+  "license": "CC BY 4.0",
+  "authors": "S. H. Alavi & M. Asseln (2026)",
+  "source_paper": "https://doi.org/10.1038/s41597-022-01905-2",
+  "dataset_doi": "https://doi.org/10.57967/hf/10464",
+  "source_sha256": "eea0eb49f92db5ca8a7d3475f7a8244f09eb555c146e9d5fdb149a3515ffbf09",
+  "triangles": 70072,
+  "units": "mm",
+  "transform": {
+    "center": [
+      247.0710906982422,
+      160.0190544128418,
+      1695.344482421875
+    ],
+    "axes": [
+      "x",
+      "z",
+      "-y"
+    ]
+  },
+  "plate_anchors": [
+    [
+      -43.6387,
+      -20.6687,
+      -7.6735
+    ],
+    [
+      -39.3531,
+      -23.7856,
+      1.4292
+    ],
+    [
+      -29.0134,
+      -27.7064,
+      14.5475
+    ],
+    [
+      -20.1744,
+      -30.124,
+      25.1831
+    ]
+  ],
+  "nerve_center": [
+    -31,
+    -33,
+    20
+  ],
+  "nerve_radius_mm": 4,
+  "registration": "Illustrative manual hardware and nerve registration; not patient landmarks.",
+  "osteotomy": "6 mm plate bridge scenario; reference mandible is intact, not a segmented BSSO."
+}
