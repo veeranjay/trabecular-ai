@@ -87,3 +87,10 @@ Initial entries are backfilled from [AUDIT.md](../../Spec/AUDIT.md), with its re
 **Why:** Apply all five owner browser comments and the supplied violet/indigo palette while preserving wordmark typography and scientific field colors.
 **Files:** `demo/src/main.tsx`, `demo/src/themes.css`, `demo/public/mark.svg`, `demo/index.html`, `demo/README.md`, `Spec/DEMO.md`, `AGENTS.md`, `docs/verification/DEMO_CHECKS.md`.
 **Checks/open work:** TypeScript/static build pass. Browser checks confirm 38 px toolbar height at 931×884 presentation and 390×844 phone sizes; no phone horizontal overflow; copilot/settings remain accessible; three logo shapes, zero header copilot duplicates and theme persistence confirmed. Website publication remains held; source updates use origin/demo/buildathon.
+
+## 2026-10-31 · TRAB-012 · Frontend / hosting configuration · Implemented
+
+**Changed:** Added demo/vercel.json selecting Other with explicit npm install/build and dist output settings; documented how the hosted UI can later call server functions, Deepgram and a numerical backend.
+**Why:** Owner encountered No detected services after selecting the multi-service preset and wanted assurance that current presentation hosting does not block future live functionality.
+**Files:** `demo/vercel.json`, `demo/README.md`.
+**Checks/open work:** JSON contract and expected dist files checked; configured npm run build passes. No service, credential, Deepgram connection, solver run or website deployment was added.

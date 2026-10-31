@@ -65,3 +65,8 @@ Evidence: [Modal access verification](../verification/MODAL_ACCESS.md). The loca
 
 **Changed:** Removed the hero badge and duplicate header voice control, replaced only the logo symbol with three shapes, fixed responsive view-toolbar height, softened expanded dock frosting and added persistent Sage/Violet theme selection.
 **Why:** Apply all five owner browser comments and the supplied violet/indigo palette while preserving wordmark typography and scientific field colors.
+
+## 2026-10-31 · TRAB-012 · Presentation hosting boundary · Configuration implemented; live services future
+
+**Changed:** Declared the demo as one static asset build on Vercel, with future server functions/provider connections kept distinct from heavy compute.
+**Why:** Correct the Services preset mismatch without treating current static delivery as a permanent restriction on a functional application.

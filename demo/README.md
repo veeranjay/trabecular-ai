@@ -52,3 +52,9 @@ Attribution: Visible Human / BoneHub, S. H. Alavi & M. Asseln (2026), CC BY 4.0,
 ## Appearance
 
 Choose Sage or Violet in Settings → Appearance, or with the landing-page footer swatches. The selected palette persists on this browser. Anatomy materials and scientific field ramps keep their colors. The wordmark typography is unchanged; the symbol contains exactly three shapes.
+
+## Vercel hosting
+
+Use the `demo/buildathon` branch, Root Directory `demo`, and Application/Framework Preset **Other**. `demo/vercel.json` pins `npm ci`, `npm run build` and output `dist`. The Services preset expects a different multi-service configuration and is unnecessary for this presentation. Refresh the import screen after the configuration push.
+
+Static asset hosting does not prevent live features. Future server-side endpoints can be added under the project-root `api/` directory on Vercel, for example to issue short-lived Deepgram tokens while keeping the provider key server-side. Browser voice then connects directly to Deepgram. Heavy numerical work runs on a separate compute backend; the browser requests jobs and receives results. Git-connected deployments can update the same site as the implementation evolves. These endpoints/provider connections are not implemented by the hosting configuration.
