@@ -55,3 +55,13 @@ Evidence: [Modal access verification](../verification/MODAL_ACCESS.md). The loca
 
 **Changed:** Moved navigation to an expanding floating glass dock, reduced workspace copy and reused existing v5 CAD hardware for presentation rendering.
 **Why:** Address owner feedback about clutter, static navigation and unrealistic metal without running new numerical analyses.
+
+## 2026-10-31 · TRAB-010 · GitHub source backup · Accepted / implemented
+
+**Changed:** Configured origin as veeranjay/trabecular-ai and pushed mvp-baseline, demo/buildathon, pre-demo-2026-10-31 and demo-review-2026-10-31 after owner-completed GitHub sign-in.
+**Why:** Owner requested GitHub backup first while keeping the exact engineering continuation point separate from presentation work.
+
+## 2026-10-31 · TRAB-011 · review fixes and optional Violet theme · Accepted / implemented
+
+**Changed:** Removed the hero badge and duplicate header voice control, replaced only the logo symbol with three shapes, fixed responsive view-toolbar height, softened expanded dock frosting and added persistent Sage/Violet theme selection.
+**Why:** Apply all five owner browser comments and the supplied violet/indigo palette while preserving wordmark typography and scientific field colors.

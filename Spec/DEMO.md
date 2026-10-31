@@ -12,3 +12,5 @@ October 31, 2026. The owner replaced immediate full-MVP delivery with an isolate
 - Current owner instruction: **hold publication** while reviewing voice and visual changes. No public access change or deployment is authorized by the prior unanswered access question.
 
 Implementation/launch/recovery notes: [demo README](../demo/README.md). Concise history: [architecture log](../docs/logs/ARCHITECTURE.md), [code log](../docs/logs/CODE_CHANGES.md). Full engineering code and numerical artifacts remain separate.
+
+October 31 review update: GitHub source pushes to `https://github.com/veeranjay/trabecular-ai` are authorized and the baseline/demo recovery refs are backed up. Website deployment remains on hold. Add optional Violet/indigo alongside Sage; preserve wordmark typography, use a three-shape symbol, remove duplicate header voice control and hero capsule, and keep the view toolbar horizontal at every breakpoint. Voice remains accessible from the floating dock on phones and in presentation mode.

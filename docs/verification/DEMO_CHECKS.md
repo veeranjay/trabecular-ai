@@ -21,3 +21,11 @@ Remaining review:
 - Owner should test a live microphone command in Chrome/Edge on localhost or HTTPS. Browser recognition support, permissions and its speech-service availability vary. Capture starts only on explicit microphone-button activation; denial/errors have typed fallback. Deepgram is not configured or represented as connected.
 - Owner visual/presentation acceptance; deployment and public access are on hold per latest instruction.
 - Rendering morphs and response proxies are presentation mechanisms, not analysis-ready CAD or physical validation. Full engineering implementation resumes from `mvp-baseline` / `pre-demo-2026-10-31`.
+
+## Review fixes: TRAB-011
+
+- Sage and Violet theme selection persists across reload, without filtering/recoloring the 3D canvas.
+- At the reported 931 × 884 presentation viewport, the Geometry/Stress/Deformation toolbar measures 221.34 × 38 px rather than stretching vertically.
+- At 390 × 844, toolbar height remains 38 px, no horizontal overflow occurs, and both copilot and settings remain reachable from the floating dock.
+- The brand symbol contains three SVG shapes; wordmark typography was not changed. The header has zero duplicate copilot buttons.
+- Expanded navigation uses a neutral translucent blur surface rather than a strong gradient. Website publication remains on hold; GitHub backup refs were independently verified.

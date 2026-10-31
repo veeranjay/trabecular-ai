@@ -1,6 +1,6 @@
 # Trabecular working agreement
 
-- Current submission work is the self-contained presentation in `demo/` on `demo/buildathon`; read `Spec/DEMO.md` and `demo/README.md`. The exact pre-demo engineering source is preserved at `mvp-baseline` / `pre-demo-2026-10-31`. Keep presentation proxies separate from production numerical code and label their provenance in methods/exports. Browser voice is not Deepgram. Publication is currently on hold at the owner's request.
+- Current submission work is the self-contained presentation in `demo/` on `demo/buildathon`; read `Spec/DEMO.md` and `demo/README.md`. The exact pre-demo engineering source is preserved at `mvp-baseline` / `pre-demo-2026-10-31`. Keep presentation proxies separate from production numerical code and label their provenance in methods/exports. Browser voice is not Deepgram. Website publication is currently on hold at the owner's request; GitHub source pushes to `https://github.com/veeranjay/trabecular-ai` are explicitly authorized. Preserve both engineering and demo branches.
 
 - At the start of every task, read `Spec/README.md`, [the architecture/system design log](docs/logs/ARCHITECTURE.md) and [the backend/frontend code log](docs/logs/CODE_CHANGES.md), then the relevant current spec. As logs grow, read recent entries and search earlier relevant decisions before editing. Preserve the original multi-horizon platform; CMF is the first showcase. Do not silently pivot or replace the intended SDF/immersed primary engine with tetrahedral analysis.
 - Keep tetrahedral analysis and saved evidence as a named reference/checker. Numerical checks, model applicability and clinical validation are different claims. Never fabricate results or a passing design.
@@ -9,5 +9,5 @@
 - Preserve saved cases, revisions, results, original geometry and browser drafts. Use isolated test data.
 - Supabase and Deepgram are scaffold-only until the owner requests live integration. Keep direct controls and local persistence usable.
 - Current compute decision (October 31): use local `cuda:0`; Modal execution is disabled until the owner explicitly resumes it. Retain the $30 monthly ceiling for any future authorized cloud work; inspect billing, cap time/resources/concurrency, record spend and avoid warm pools or unbounded fallback.
-- UI: black/charcoal, restrained lime, rounded glass, subtle gradients, smooth motion with reduced-motion support. One contextual inspector; essential state once, detailed evidence on demand.
+- UI: black/charcoal, selectable restrained Sage/lime or Violet/indigo, rounded glass, subtle gradients, smooth motion with reduced-motion support. One contextual inspector; essential state once, detailed evidence on demand.
 - Follow `frontend/AGENTS.md` and installed Next.js docs. Run appropriate checks; do not declare the MVP complete while mandatory gates remain open.

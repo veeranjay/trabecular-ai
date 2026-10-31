@@ -99,3 +99,23 @@ Append a concise record for each logical change batch: reason, files/area, verif
 **Reason:** Make the presentation reviewable and portable without backend setup while distinguishing measured UI behavior from unfinished live voice/numerical validation.
 
 **Verification:** TypeScript and static build pass; ZIP integrity passes; no backend/frontend engineering source diff versus mvp-baseline. Live human microphone recognition/audio quality remain unverified; public deployment held.
+
+## TRAB-010 · 2026-10-31 · GitHub source backup
+
+**Changed:** Configured origin as veeranjay/trabecular-ai and pushed mvp-baseline, demo/buildathon, pre-demo-2026-10-31 and demo-review-2026-10-31 after owner-completed GitHub sign-in.
+
+**Reason:** Owner requested GitHub backup first while keeping the exact engineering continuation point separate from presentation work.
+
+**Verification:** Remote refs independently match 69ab06c286218e5a0146199fc8fbbe14bca502f0 for the baseline and 8eb9e384bca0e0c68b57f6c9edad4d94d461ef45 for the initial demo. Tracked-file checks found no environment files, private keys or databases; no force push or website deployment.
+
+**Files:** `.git/config`, `demo/README.md`, `Spec/DEMO.md`, `AGENTS.md`.
+
+## TRAB-011 · 2026-10-31 · review fixes and optional Violet theme
+
+**Changed:** Removed the hero badge and duplicate header voice control, replaced only the logo symbol with three shapes, fixed responsive view-toolbar height, softened expanded dock frosting and added persistent Sage/Violet theme selection.
+
+**Reason:** Apply all five owner browser comments and the supplied violet/indigo palette while preserving wordmark typography and scientific field colors.
+
+**Verification:** TypeScript/static build pass. Browser checks confirm 38 px toolbar height at 931×884 presentation and 390×844 phone sizes; no phone horizontal overflow; copilot/settings remain accessible; three logo shapes, zero header copilot duplicates and theme persistence confirmed. Website publication remains held; source updates use origin/demo/buildathon.
+
+**Files:** `demo/src/main.tsx`, `demo/src/themes.css`, `demo/public/mark.svg`, `demo/index.html`, `demo/README.md`, `Spec/DEMO.md`, `AGENTS.md`, `docs/verification/DEMO_CHECKS.md`.

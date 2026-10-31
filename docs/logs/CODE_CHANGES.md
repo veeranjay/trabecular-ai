@@ -73,3 +73,17 @@ Initial entries are backfilled from [AUDIT.md](../../Spec/AUDIT.md), with its re
 **Why:** Make the presentation reviewable and portable without backend setup while distinguishing measured UI behavior from unfinished live voice/numerical validation.
 **Files:** `docs/verification/DEMO_CHECKS.md`, `demo/START_DEMO.cmd`, `demo/serve.mjs`, `demo/README.md`, `README.md`.
 **Checks/open work:** TypeScript and static build pass; ZIP integrity passes; no backend/frontend engineering source diff versus mvp-baseline. Live human microphone recognition/audio quality remain unverified; public deployment held.
+
+## 2026-10-31 · TRAB-010 · Project docs / source control · Implemented
+
+**Changed:** Configured origin as veeranjay/trabecular-ai and pushed mvp-baseline, demo/buildathon, pre-demo-2026-10-31 and demo-review-2026-10-31 after owner-completed GitHub sign-in.
+**Why:** Owner requested GitHub backup first while keeping the exact engineering continuation point separate from presentation work.
+**Files:** `.git/config`, `demo/README.md`, `Spec/DEMO.md`, `AGENTS.md`.
+**Checks/open work:** Remote refs independently match 69ab06c286218e5a0146199fc8fbbe14bca502f0 for the baseline and 8eb9e384bca0e0c68b57f6c9edad4d94d461ef45 for the initial demo. Tracked-file checks found no environment files, private keys or databases; no force push or website deployment.
+
+## 2026-10-31 · TRAB-011 · Frontend · Implemented
+
+**Changed:** Removed the hero badge and duplicate header voice control, replaced only the logo symbol with three shapes, fixed responsive view-toolbar height, softened expanded dock frosting and added persistent Sage/Violet theme selection.
+**Why:** Apply all five owner browser comments and the supplied violet/indigo palette while preserving wordmark typography and scientific field colors.
+**Files:** `demo/src/main.tsx`, `demo/src/themes.css`, `demo/public/mark.svg`, `demo/index.html`, `demo/README.md`, `Spec/DEMO.md`, `AGENTS.md`, `docs/verification/DEMO_CHECKS.md`.
+**Checks/open work:** TypeScript/static build pass. Browser checks confirm 38 px toolbar height at 931×884 presentation and 390×844 phone sizes; no phone horizontal overflow; copilot/settings remain accessible; three logo shapes, zero header copilot duplicates and theme persistence confirmed. Website publication remains held; source updates use origin/demo/buildathon.

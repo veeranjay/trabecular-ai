@@ -1,0 +1,130 @@
+/* Appearance changes UI chrome only. Anatomical materials and scientific field ramps stay unchanged. */
+:root {
+  --surface-dock: rgba(32, 37, 34, .58);
+  --surface-dock-expanded: rgba(35, 40, 37, .60);
+  --dock-edge: rgba(239, 245, 238, .14);
+  --theme-focus: #d0efac;
+}
+.theme-picker{display:flex;align-items:center;gap:5px;padding:4px;border:1px solid #ffffff0d;border-radius:12px;background:#ffffff03}
+.theme-picker button{display:flex;align-items:center;gap:7px;padding:8px 10px;border-radius:8px;font-size:10px;color:#889186;min-width:82px;justify-content:flex-start}
+.theme-picker button.selected{color:#e0e7d8;background:#ffffff09;box-shadow:inset 0 1px #ffffff0a}
+.theme-picker button:hover{background:#ffffff08;color:#eef1e8}
+.theme-picker i{width:10px;height:10px;border-radius:50%;box-shadow:inset 0 1px #ffffff70;border:1px solid #ffffff0e}
+.theme-picker i.sage{background:linear-gradient(135deg,#e0edc2,#88a66c)}
+.theme-picker i.violet{background:linear-gradient(135deg,#c5b7ff,#6751b8)}
+.theme-picker svg{margin-left:auto;flex-shrink:0;color:var(--theme-focus)}
+.appearance-row{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:25px 0 23px}
+.appearance-row>span{font-size:12px;color:#afb8a6}
+.landing-footer .theme-picker{flex-shrink:0}
+.landing-footer .theme-picker button{min-width:65px;font-size:9px;padding:7px}
+
+/* Fixed intrinsic height prevents opposing responsive top/bottom insets from stretching this toolbar. */
+.field-switch,.presentation .field-switch{height:38px;min-height:38px;max-height:38px;width:max-content;max-width:calc(100% - 36px);display:flex;flex-direction:row;align-items:center;justify-content:center;flex-wrap:nowrap;white-space:nowrap;top:28px;bottom:auto;left:50%;transform:translateX(-50%)}
+.field-switch button{height:30px;min-height:30px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;line-height:1}
+@media(max-width:1180px){.field-switch{top:auto;bottom:48px}.presentation .field-switch{top:28px;bottom:auto}}
+@media(max-width:650px){.field-switch,.presentation .field-switch{top:auto;bottom:52px}.appearance-row{flex-wrap:wrap}.landing-footer .theme-picker{order:2}}
+
+/* Neutral frosted glass: the expanded dock changes width, rather than adding a strong gradient. */
+.floating-nav,.floating-nav:hover,.floating-nav:focus-within{background:var(--surface-dock);border-color:var(--dock-edge);backdrop-filter:blur(36px) saturate(1.08);-webkit-backdrop-filter:blur(36px) saturate(1.08);box-shadow:0 18px 48px #0005,inset 0 1px #ffffff18,inset 0 -1px #ffffff04}
+.floating-nav:hover,.floating-nav:focus-within{background:var(--surface-dock-expanded)}
+.floating-nav:before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:.035;z-index:-1;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23n)' opacity='.7' d='M0 0h100v100H0z'/%3E%3C/svg%3E")}
+.presentation .floating-nav{display:flex;opacity:.45}
+.presentation .floating-nav:hover,.presentation .floating-nav:focus-within{opacity:1}
+@media(max-width:650px){
+  .floating-nav>div:last-child{display:flex;flex-direction:row;width:auto;flex:0 0 auto;padding:0;border:0;margin:0;gap:0}
+  .floating-nav>div:nth-child(2){flex:1;min-width:0}
+  .floating-nav button{width:clamp(32px,10vw,40px);padding:9px;min-width:0;gap:0}
+  .floating-nav>div:last-child button>span{display:none}
+}
+
+/* Violet / indigo, derived from the supplied near-black buildathon reference. */
+html[data-theme=violet]{--lime:#c9b7ff;--muted:#9189ab;--theme-focus:#cbb9ff;--surface-dock:rgba(37,32,50,.57);--surface-dock-expanded:rgba(43,37,58,.60);--dock-edge:rgba(226,217,255,.16);color:#eeeaf8;background:#0b0815}
+html[data-theme=violet] body{color:#eeeaf8;background:#0b0815}
+html[data-theme=violet] ::selection{color:#1b103a;background:#c9b5ff}
+html[data-theme=violet] :is(button,a,input,[tabindex]):focus-visible{outline-color:#cbb9ff}
+html[data-theme=violet] .landing{background:#0b0815}
+html[data-theme=violet] .app-shell{background:radial-gradient(ellipse at 55% -20%,#52279f22,transparent 68%),#0c0915}
+html[data-theme=violet] .app-header{background:#100c1be0;border-color:#b7a0ef0b}
+html[data-theme=violet] .brand-mark,html[data-theme=violet] .brand-period{color:#c2aaff}
+html[data-theme=violet] .hero:before{background:radial-gradient(ellipse at 66% 14%,#612fc64a,transparent 58%),radial-gradient(ellipse at 18% 40%,#24206418,transparent 55%)}
+html[data-theme=violet] .hero:after{background-image:linear-gradient(#b89ae506 1px,transparent 1px),linear-gradient(90deg,#b89ae506 1px,transparent 1px)}
+html[data-theme=violet] .hero h1 span{background-image:linear-gradient(110deg,#e8dfff,#a78fe4 55%,#d6c3ff)}
+html[data-theme=violet] .hero-word{background-image:linear-gradient(#8e66d02b,#26163505)}
+html[data-theme=violet] .hero-orbit,html[data-theme=violet] .hero-orbit:before,html[data-theme=violet] .hero-orbit:after{border-color:#b594e70b}
+html[data-theme=violet] .hero-model:before{background:#a678e90a}
+html[data-theme=violet] :is(.eyebrow,.landing-links,.hero-bottom a,.hero-model-tag,.model-hint){color:#a99ac6}
+html[data-theme=violet] :is(.hero-type>p,.hero-note,.landing-footer>span,.feature-card p,.kernel-section p,.voice-landing p,.horizon-grid p){color:#9186a9}
+html[data-theme=violet] :is(.landing-section h2 span,.kernel-section h2 span,.voice-landing h2 span){color:#a18bc7}
+html[data-theme=violet] .button.lime{color:#231437;background:linear-gradient(125deg,#e1d5ff,#bfa3f6);box-shadow:0 3px 18px #9b6fdb10,inset 0 1px #ffffff80}
+html[data-theme=violet] .button.lime:hover{box-shadow:0 4px 28px #b18ae62a}
+html[data-theme=violet] .button.light{background:#e8defa;color:#251a38}
+html[data-theme=violet] :is(.button.outline,.button.outline:hover){border-color:#cbb3f51f}
+html[data-theme=violet] .button.outline:hover{background:#cdb3f40a}
+html[data-theme=violet] :is(.text-button,.landing-footer>button:last-child,.feature-card>div,.feature-card>svg,.horizon-grid small,.voice-bottom button){color:#b39acb}
+html[data-theme=violet] :is(.feature-card,.voice-preview,.case-card,.empty-showcase,.scatter-panel,.candidate-panel,.study-results,.history-card){background:linear-gradient(140deg,#2f1f4947,#140f208f);border-color:#bc9aef14}
+html[data-theme=violet] .feature-card:hover,html[data-theme=violet] .case-card:hover,html[data-theme=violet] .history-card:hover{border-color:#bd97f138}
+html[data-theme=violet] .landing-cta{background:radial-gradient(ellipse at 80% 120%,#8251bd36,transparent 75%),linear-gradient(120deg,#33214882,#1b112880);border-color:#c7a7f024}
+html[data-theme=violet] .stage{background:radial-gradient(ellipse at 60% 30%,#69419412,transparent 65%),linear-gradient(135deg,#14101cb0,#0d0a14e0);border-color:#c0a1e70e}
+html[data-theme=violet] .stage:before{background-image:linear-gradient(#c5a5f305 1px,transparent 1px),linear-gradient(90deg,#c5a5f305 1px,transparent 1px)}
+html[data-theme=violet] .glass{border-color:#cfb8f713}
+html[data-theme=violet] :is(.inspector,.view-tools,.field-switch){background:linear-gradient(140deg,#3b304842,#18121f96);backdrop-filter:blur(32px) saturate(1.1)}
+html[data-theme=violet] :is(.stage h1,.inspector-title>svg,.icon,.project-name,.breadcrumb,.breadcrumb .custom-select>button,.lab-label){color:#9c8bab}
+html[data-theme=violet] :is(.inspector-title h2,.candidate-panel h2,.table-heading h2){color:#e0d6ee}
+html[data-theme=violet] :is(.control>span:first-child,.toggle-row,.muted,.anatomy-summary small,.custom-select>button,.revision-row,.case-card-body span,.page-heading p){color:#a89abc}
+html[data-theme=violet] :is(.control strong,.metric>strong,.compare-card>strong,.history-card>strong,.anatomy-summary strong,.candidate-row strong,.spoken-intent){color:#e1d5f6}
+html[data-theme=violet] :is(.range-ends small,.control strong small,.section-label,.micro,.inspector-foot>span,.metric>span,.metric strong small,.metric>small,.candidate-row div>span,.compare-card>span,.compare-card strong small,.compare-card>div,.delta>span,.case-card-foot,.attribution,.import-options,.history-card p,.history-card>span){color:#8f7d9f}
+html[data-theme=violet] input[type=range]{background:linear-gradient(90deg,#bc9be9 var(--fill,50%),#30253c var(--fill,50%))}
+html[data-theme=violet] input[type=range]::-webkit-slider-thumb{background:linear-gradient(#e7d6ff,#b092d5);box-shadow:0 0 0 4px #bd9cef0b,0 2px 4px #0006}
+html[data-theme=violet] input[type=range]:hover::-webkit-slider-thumb{box-shadow:0 0 0 6px #bd9cef13}
+html[data-theme=violet] input[type=range]::-moz-range-thumb{background:#d3b8f5}
+html[data-theme=violet] :is(.floating-nav button,.view-tools button,.workflow button,.field-switch button,.inspector-tabs button){color:#9e8aac}
+html[data-theme=violet] .floating-nav button.active{color:#e1cef9;background:linear-gradient(130deg,#d2b0fd19,#bf9fea08)}
+html[data-theme=violet] .floating-nav button.active:after{background:#c5a2ed;box-shadow:0 0 8px #c6a5e726}
+html[data-theme=violet] .floating-nav button:hover{background:#c6a4eb0b;color:#eadcfb}
+html[data-theme=violet] :is(.field-switch button.selected,.workflow button.selected,.view-tools button.selected,.inspector-tabs .selected){color:#e3d2fa;background:#c8a3ee13;box-shadow:inset 0 1px #edd6ff0e}
+html[data-theme=violet] .inspector-tabs .selected{border-color:#baa0dd}
+html[data-theme=violet] .workflow small{color:#715b84}
+html[data-theme=violet] .workflow button.selected small{color:#b08ed2}
+html[data-theme=violet] .toggle-row i{background:#31253d;border-color:#a38abd22}
+html[data-theme=violet] .toggle-row i:after{background:#8e75a5}
+html[data-theme=violet] .toggle-row.on i{background:#c4a5e9;border-color:#d4baf3}
+html[data-theme=violet] .toggle-row.on i:after{background:#39234e}
+html[data-theme=violet] :is(.result-box,.compare-card.current,.note,.method-diagram div){background:linear-gradient(130deg,#9e6fcb11,#5b327706);border-color:#c5a2ed1c}
+html[data-theme=violet] :is(.method-diagram,.method-diagram div,.note,.evidence-list>div,.evidence-list svg,.delta strong){color:#bba0d8}
+html[data-theme=violet] .select-menu{background:#21172ef7;border-color:#c7a4ed25}
+html[data-theme=violet] .select-menu>button{color:#cbb2e3}
+html[data-theme=violet] .select-menu>button:hover,html[data-theme=violet] .select-menu [aria-selected=true]{background:#c6a0ee0d;color:#ead9fa}
+html[data-theme=violet] .select-menu small{color:#927aa5}
+html[data-theme=violet] :is(.modal,.tour-card,.voice-copilot){background:radial-gradient(ellipse at 45% 10%,#7d45a519,transparent 60%),linear-gradient(145deg,#2c203aee,#130e1dee);border-color:#c4a0e929}
+html[data-theme=violet] :is(.modal>p,.modal>small,.modal-facts>div,.tour-card p,.tour-top .eyebrow,.voice-header span,.voice-caption>span,.voice-reply p,.voice-prompts button,.voice-bottom>span){color:#a28bb6}
+html[data-theme=violet] :is(.tour-card h2,.voice-header strong,.voice-caption p,.voice-input input){color:#e4d6f4}
+html[data-theme=violet] :is(.voice-reply,.voice-symbol,.voice-prompts button,.voice-input){border-color:#c4a1ea19;background:#c6a5e909}
+html[data-theme=violet] :is(.voice-symbol,.voice-reply>svg,.voice-actions>.icon,.voice-input .icon,.voice-prompts button:hover){color:#c2a2e3}
+html[data-theme=violet] .voice-mic{background:linear-gradient(135deg,#e6d6fa,#b095d1);color:#352048}
+html[data-theme=violet] .voice-meter i{background:#cba9ee}
+html[data-theme=violet] .voice-orb>div:not(.orb-center){border-color:#c4a1ec45;background:radial-gradient(ellipse at 20% 20%,#c9a2ed25,#8c65b008 65%);box-shadow:inset 0 0 24px #a175ce15,0 0 25px #b58cdb13}
+html[data-theme=violet] .orb-center{color:#e0c6fb}
+html[data-theme=violet] .voice-orb .orb-b{border-color:#a87cce29!important}
+html[data-theme=violet] .voice-orb .orb-c{border-color:#d0b2ee44!important}
+html[data-theme=violet] :is(.voice-orb.listening>div:not(.orb-center),.voice-orb.speaking>div:not(.orb-center)){border-color:#d3adfa95}
+html[data-theme=violet] .voice-input{background:#110a19b3}
+html[data-theme=violet] .voice-input input::placeholder{color:#78608a}
+html[data-theme=violet] .tour-progress button{background:#9973ba32}
+html[data-theme=violet] .tour-progress button.done{background:#c9a4ed}
+html[data-theme=violet] :is(.toast,.playback){color:#d7beed;background:#271933ed}
+html[data-theme=violet] :is(.status-dot,.pulse-dot){background:#c2a0e8;box-shadow:0 0 8px #c8a4f322}
+html[data-theme=violet] :is(.settings-row,.appearance-row>span){color:#aa90be}
+html[data-theme=violet] .settings-row strong{color:#d1b7e6}
+html[data-theme=violet] .theme-picker button.selected{color:#eadcfa;background:#c1a0e210}
+html[data-theme=violet] .theme-picker button{color:#a393b3}
+html[data-theme=violet] .sdf-art{background-image:linear-gradient(#b68bda0e 1px,transparent 1px),linear-gradient(90deg,#b68bda0e 1px,transparent 1px)}
+html[data-theme=violet] .sdf-ring,html[data-theme=violet] .preview-orb i{border-color:#bf97e855}
+html[data-theme=violet] .sdf-art>span,html[data-theme=violet] .intent-result{color:#cdb0e8}
+html[data-theme=violet] .intent-result{border-color:#c4a0ec20;background:#b185d307}
+html[data-theme=violet] .intent-result span{color:#dfc6f7}
+html[data-theme=violet] .intent-result>svg{color:#ba95dc}
+html[data-theme=violet] .horizon-grid{border-color:#c4a1eb0e}
+html[data-theme=violet] .avatar{background:#bda2d312;border-color:#c5a0eb1d;color:#c8a7e6}
+html[data-theme=violet] .floating-nav,html[data-theme=violet] .floating-nav:hover,html[data-theme=violet] .floating-nav:focus-within{background:var(--surface-dock);border-color:var(--dock-edge)}
+html[data-theme=violet] .floating-nav:hover,html[data-theme=violet] .floating-nav:focus-within{background:var(--surface-dock-expanded)}
+html[data-theme=violet] :is(.inspector,.candidate-panel,.voice-copilot){scrollbar-color:#51405f transparent}

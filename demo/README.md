@@ -43,8 +43,12 @@ The source checkpoint is commit `69ab06c286218e5a0146199fc8fbbe14bca502f0`, bran
 git switch mvp-baseline
 ```
 
-Return with `git switch demo/buildathon`. Private environment settings, databases, existing artifacts and browser drafts are excluded from Git and were left in place; switching source branches does not restore or overwrite those runtime files. No remote contains the engineering checkpoint or private files.
+Return with `git switch demo/buildathon`. Private environment settings, databases, existing artifacts and browser drafts are excluded from Git and were left in place; switching source branches does not restore or overwrite those runtime files. Both source branches and recovery tags are backed up at https://github.com/veeranjay/trabecular-ai. Private environment settings, databases and artifacts are excluded from that repository.
 
-Publication is on hold at the owner's request. The registered Sites identity is `appgprj_6ae620dad71081918b83d7496fb4f184`; its private manifest is retained in the isolated publishing checkout under `tmp/trabecular-site/.openai/hosting.json`. Reuse it rather than create another Site. No source push or live deployment has been completed.
+Website publication is on hold at the owner's request; GitHub source pushes are explicitly authorized. The registered Sites identity is `appgprj_6ae620dad71081918b83d7496fb4f184`; its private manifest is retained in the isolated publishing checkout under `tmp/trabecular-site/.openai/hosting.json`. Reuse it rather than create another Site. No Sites source push or live website deployment has been completed. GitHub source backup is a separate operation.
 
 Attribution: Visible Human / BoneHub, S. H. Alavi & M. Asseln (2026), CC BY 4.0, https://huggingface.co/datasets/BoneHub/visible-human-3d-models. Local DM Sans and Manrope font licenses are included in `public/fonts/`.
+
+## Appearance
+
+Choose Sage or Violet in Settings → Appearance, or with the landing-page footer swatches. The selected palette persists on this browser. Anatomy materials and scientific field ramps keep their colors. The wordmark typography is unchanged; the symbol contains exactly three shapes.
